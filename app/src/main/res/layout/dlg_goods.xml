@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dlg_goods"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+    <TextView android:text="@string/lines_dlg_name" 
+    		android:id="@+id/txtName_dlgGoods" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:textSize="13sp"
+    		android:textColor="#FFFF00"    		 
+    		android:textStyle="bold"/>
+	  <LinearLayout android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    	<LinearLayout android:orientation="vertical"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content">	
+    	  <TextView android:text="КОММЕНТАРИЙ" 
+    	  	android:textSize="12sp"
+    	  	android:maxLength="18"
+    	  	android:minWidth="20dp"
+    	  	android:background="#20FFFF00"
+    		android:id="@+id/txtComment_dlgGoods" 
+    		android:textColor="#00FF00"
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>
+    	  <TextView android:text="@string/lines_dlg_code" 
+    	  	android:textSize="12sp"
+    	  	android:maxLength="13"
+    		android:id="@+id/txtId_dlgGoods" 
+    		android:textColor="#FFFFFF"
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>    
+    	  <TextView android:text="@string/lines_dlg_price"
+    	  	android:textSize="12sp" 
+    		android:id="@+id/txtPrice_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>
+    	  <TextView android:text="@string/lines_dlg_discount"
+    	  	android:textSize="12sp"
+    		android:id="@+id/txtDiscount_dlgGoods"
+    		android:textColor="#FFFFFF"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"/>
+    	  <TextView android:text="@string/lines_dlg_price_with_discount"
+    	  	android:textSize="12sp"
+    		android:id="@+id/txtPriceWithDiscount_dlgGoods"
+    		android:textColor="#FFFFFF"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"/>
+    	  <TextView android:text="@string/lines_dlg_weight"
+    	  	android:textSize="12sp" 
+    		android:id="@+id/txtWeight_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>    
+    	  <TextView android:text="@string/lines_dlg_rest" 
+    	  	android:textSize="12sp"
+    		android:id="@+id/txtRest_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>
+    	 </LinearLayout>
+    	 <LinearLayout android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_gravity="center"
+    		android:layout_marginLeft="5dp"> 
+    		
+  
+		<LinearLayout android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_gravity="center">
+       	 <TextView
+           android:id="@+id/txtCount_dlgGoods"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/lines_dlg_number"
+           android:textColor="#FFFF00"
+           android:textSize="13sp"
+           android:textStyle="bold"
+           android:layout_gravity="center" />
+       	 <TextView android:text="@string/lines_dlg_pcs"    			 
+   				android:layout_width="fill_parent" 
+   				android:layout_height="wrap_content"
+   				android:textColor="#FFFF00"
+    			android:textStyle="bold"
+    			android:textSize="13sp"/>
+       	 </LinearLayout>
+	    	      <RelativeLayout android:layout_width="fill_parent"
+	    	          			android:layout_height="wrap_content">
+		    	         <EditText
+				    	      android:text="0"
+				    	      android:maxLines="1"
+				    	      android:maxLength="10"
+				    	      android:id="@+id/edtQty"
+				    	      android:layout_width="wrap_content"
+				    	      android:layout_height="wrap_content"
+				    	      android:layout_alignParentLeft="true"
+				    	      android:layout_alignParentTop="true"
+				    	      android:layout_toLeftOf="@+id/lnr_pack"
+				    	      android:inputType="numberDecimal|numberSigned"/>
+		    	       
+		    	         <LinearLayout android:id="@+id/lnr_pack"
+		    	             		   android:layout_width="wrap_content"
+	    	          				   android:layout_height="wrap_content"
+	    	          				   android:layout_alignParentRight="true"
+	    	          				   android:layout_alignParentTop="true"
+	    	          				   android:paddingLeft="4dip"
+	    	          				   android:orientation="vertical">
+			    	        
+			    	         <CheckBox
+							        android:id="@+id/chkPack"
+							        android:text="УП"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:checked="false"
+							        android:textColor="#FFFF00"
+					    			android:textStyle="bold"
+					    			android:textSize="12sp"/>
+		    	         </LinearLayout>
+	    	      </RelativeLayout>
+	    	      <RelativeLayout 
+	    	          			android:id="@+id/rltPrc"
+	    	          			android:layout_width="fill_parent"
+	    	          			android:layout_height="wrap_content"
+	    	          			android:visibility="gone">
+		    	         <EditText
+				    	      android:text="0"
+				    	      android:maxLines="1"
+				    	      android:maxLength="6"
+				    	      android:id="@+id/edtPrc"
+				    	      android:layout_width="wrap_content"
+				    	      android:layout_height="wrap_content"
+				    	      android:layout_alignParentLeft="true"
+				    	      android:layout_alignParentTop="true"
+				    	      android:layout_toLeftOf="@+id/lnr_prc"
+				    	      android:numeric="integer"
+				    	      android:inputType="numberDecimal"/>
+
+					  <EditText
+						  android:text="0"
+						  android:maxLines="1"
+						  android:maxLength="8"
+						  android:id="@+id/edtSum"
+						  android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"
+						  android:layout_alignParentLeft="true"
+						  android:layout_below="@+id/edtPrc"
+						  android:layout_toLeftOf="@+id/lnr_prc"
+						  android:numeric="integer"
+						  android:inputType="numberDecimal"
+						  android:visibility="gone"/>
+		    	       
+		    	         <LinearLayout android:id="@+id/lnr_prc"
+		    	             		   android:layout_width="wrap_content"
+	    	          				   android:layout_height="wrap_content"
+	    	          				   android:layout_alignParentRight="true"
+	    	          				   android:layout_alignParentTop="true"
+	    	          				   android:paddingLeft="4dip"
+	    	          				   android:orientation="vertical">
+			    	        
+			    	         <CheckBox
+							        android:id="@+id/chkPrc"
+							        android:text="ЦБ"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:checked="false"
+							        android:textColor="#FFFF00"
+					    			android:textStyle="bold"
+					    			android:textSize="12sp"/>
+		    	         </LinearLayout>
+	    	      </RelativeLayout>
+    	  	<LinearLayout android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_gravity="center">
+    	  	  <TextView android:text="@string/lines_dlg_total" 
+    			android:id="@+id/txtTotal_dlgGoods" 
+   				android:layout_width="fill_parent" 
+   				android:layout_height="wrap_content"
+   				android:textColor="#FFFF00"
+    			android:textStyle="bold"
+    			android:textSize="13sp"/>	    
+   		      <TextView android:id="@+id/txtCurrency_dlgGoods"
+   		          android:text="@string/lines_dlg_curency"    			 
+   				android:layout_width="fill_parent" 
+   				android:layout_height="wrap_content"
+   				android:textColor="#FFFF00"
+    			android:textStyle="bold"
+    			android:textSize="13sp"/>
+   			</LinearLayout>		  
+    	 </LinearLayout>
+    	 
+    	</LinearLayout>
+    	
+
+</LinearLayout>

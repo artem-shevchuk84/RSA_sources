@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:background="@drawable/bground">
+
+    <RelativeLayout android:layout_width="fill_parent"
+     				android:layout_height="wrap_content">
+     				
+		<ImageView	android:id="@+id/plan_panel"
+		    		android:layout_height="50dip"
+    				android:layout_width="fill_parent"
+    				android:src="@drawable/panel_upper" />
+
+		
+		    
+		    <TextView 	android:id="@+id/plan_title"
+		    			android:layout_width="wrap_content"
+     					android:layout_height="wrap_content"
+     					android:text="Понедельник, 28 Января"
+     					android:textColor="#ffff00"
+     					android:textStyle="bold"
+     					android:textSize="14sp"
+     					android:layout_centerVertical="true"
+		   				android:layout_alignParentRight="true"
+		    			android:layout_toRightOf="@+id/plan_pbtn_prev"
+		    			android:gravity="center"
+		    			android:layout_marginRight="7dip"/>
+		
+		<Button android:id="@+id/plan_pbtn_prev"
+		    android:layout_width="wrap_content"
+		    android:layout_height="35dip"
+		    android:background="@drawable/states_shapes"
+		    android:text="@string/plan_back"
+		    android:textColor="#ffffff"
+		    android:textStyle="bold"
+		    android:layout_centerVertical="true"
+		    android:layout_alignLeft="@+id/plan_panel"
+		    android:layout_marginLeft="7dip"
+		    android:layout_marginTop="1dip"/>
+		
+     </RelativeLayout>
+     <ListView 	android:id="@+id/android:list" 
+         		android:layout_height="fill_parent" 
+     			android:layout_width="fill_parent"
+     			android:cacheColorHint="@android:color/transparent"
+     			android:fastScrollEnabled="true"/>
+     
+     <LinearLayout android:id="@+id/android:empty" 
+         		   android:layout_width="fill_parent"
+     			   android:layout_height="fill_parent"
+     			   android:background="@drawable/bground"
+     			   android:cacheColorHint="@android:color/transparent">
+     	   <TextView android:id="@+id/txtEmpty" 
+      		 android:layout_height="fill_parent"
+      		 android:layout_width="fill_parent"
+      		 android:layout_margin="15dp" 
+      		 android:text="@string/plan_empty" 
+      		 android:layout_gravity="center"
+      		 android:gravity="center"
+      		 android:textAppearance="?android:attr/textAppearanceLarge"/>         
+     </LinearLayout>
+
+ </LinearLayout>

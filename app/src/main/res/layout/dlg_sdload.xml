@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlg_sdload"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginRight="4dip"
+    	android:layout_marginLeft="4dip">
+
+        <TextView
+            android:id="@+id/txtTableName_sdload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/dlg_sdload_table"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtPosition_sdload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+        <TextView
+            android:id="@+id/txtRecordsCount_sdload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffff"
+            android:text="@string/dlg_sdload_count"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </RelativeLayout>
+    
+ 	<ProgressBar android:id="@+id/Progress_sdload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+    		android:layout_marginLeft="3dip"/>    
+    <TextView
+        	android:id="@+id/txtLog_sdload"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:text="@string/dlg_sdload_log"
+        	android:layout_marginTop="2dip"/>
+   	
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnDownload_download"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/states_btn_cancel"
+        android:text="@string/download_accept"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtTableName_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnDownload_download"
+        android:text="@string/download_table"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtPosition_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtTableName_download"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtRecordsCount_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtTableName_download"
+        android:text="@string/download_number"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ProgressBar
+        android:id="@+id/Progress_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTableName_download" />
+
+    <ScrollView
+        android:id="@+id/download_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chkFtp"
+        android:layout_below="@+id/Progress_download"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:scrollHorizontally="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TextView
+            android:id="@+id/txtLog_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2822b14c"
+            android:gravity="left"
+            android:textColor="#FFA564"
+            android:textSize="13sp" />
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/chkFtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/text_load_ftp_settings"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

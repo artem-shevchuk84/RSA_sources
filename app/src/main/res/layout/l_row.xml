@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        tools:text="Группа товаров" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="4dp"
+        android:textColor="#0000BB"
+        android:textSize="14sp"
+        tools:text="ЦЕНА: 0.24" />
+
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/price"
+        android:layout_toLeftOf="@+id/order"
+        android:layout_toRightOf="@+id/price"
+        android:layout_toStartOf="@+id/order"
+        android:gravity="center"
+        android:textColor="#FF6400"
+        android:textSize="14sp"
+        tools:text="ОСТАТОК: 12" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="4dp"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        tools:text="ЗАКАЗ: 0" />
+
+</RelativeLayout>

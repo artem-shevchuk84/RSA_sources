@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    
+    	<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:orientation="horizontal">
+			    	<LinearLayout  
+				            android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:orientation="vertical"
+					        android:layout_marginLeft="10dip"
+					        android:layout_marginRight="10dip">
+				        	
+				            <TextView 
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#ffff00"
+					        	android:text="@string/goods_hist_date"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            <TextView 
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/goods_hist_rest"
+					        	android:textColor="#ffff00"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            <TextView 
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/goods_hist_ord"
+					        	android:textColor="#ffff00"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            <TextView 
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/goods_hist_rec"
+					        	android:textColor="#ffff00"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            
+				       </LinearLayout>
+				        
+			    
+				    <RelativeLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginRight="10dip">
+				        <LinearLayout  android:id="@+id/ln_dlg_goods_hist1"
+				            android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:orientation="vertical"
+				    		android:layout_alignParentLeft="true">
+				        	
+				            <TextView android:id="@+id/txt_dlg_hist1_date"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#00ff00"
+					        	android:textSize="12sp"
+					        	android:text="11.09.12"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist1_rest"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="26"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist1_ord"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="16"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist1_rec"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="15"
+					        	android:gravity="center"/>
+				            
+				        </LinearLayout>
+				        
+				        <LinearLayout android:id="@+id/ln_dlg_goods_hist2"
+				            android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:orientation="vertical"
+				    		android:layout_toRightOf="@+id/ln_dlg_goods_hist1"
+				        	android:layout_toLeftOf="@+id/ln_dlg_goods_hist3">
+				        
+				            <TextView android:id="@+id/txt_dlg_hist2_date"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#00ff00"
+					        	android:textSize="12sp"
+					        	android:text="10.10.12"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist2_rest"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="34"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist2_ord"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="4"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist2_rec"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:textSize="12sp"
+					        	android:text="14"
+					        	android:gravity="center"/>
+				            
+				        </LinearLayout>
+				        
+				        <LinearLayout  android:id="@+id/ln_dlg_goods_hist3"
+				            android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:orientation="vertical"
+				    		android:layout_alignParentRight="true">
+				            
+					        <TextView android:id="@+id/txt_dlg_hist3_date"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#00ff00"
+					        	android:textSize="12sp"
+					        	android:text="12.11.12"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist3_rest"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:text="12"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist3_ord"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:text="34"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				            <TextView android:id="@+id/txt_dlg_hist3_rec"
+					        	android:layout_width="fill_parent"
+					        	android:layout_height="wrap_content"
+					        	android:textColor="#EAEAEA"
+					        	android:text="12"
+					        	android:textSize="12sp"
+					        	android:gravity="center"/>
+				        
+				        </LinearLayout>
+				        
+				    </RelativeLayout>
+    	</LinearLayout>
+    
+    <RelativeLayout 
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="3dip"
+    		android:layout_marginLeft="10dip"
+        	android:layout_marginRight="10dip"
+    		android:gravity="center">
+		    <TextView android:id="@+id/txt_dlg_current_rest"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#00FFFF"
+		        android:textSize="12sp"
+		        android:text="@string/goods_rest_hist"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"/>
+		    <EditText android:id="@+id/edtRec"
+    	      android:text="0"
+    	      android:maxLines="1"
+    	      android:maxLength="6"
+    	      android:layout_width="fill_parent"
+    	      android:layout_height="wrap_content"
+    	      android:layout_marginLeft="10dip"
+    	      android:layout_marginRight="5dip"
+    	      android:inputType="number"
+    	      android:layout_toRightOf="@+id/txt_dlg_current_rest"
+    	      android:layout_toLeftOf="@+id/ln_dlg_hist_rec"/>
+		    
+		    <LinearLayout android:id="@+id/ln_dlg_hist_rec"
+		        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="vertical"
+    			android:layout_alignParentRight="true"
+    			android:layout_marginLeft="5dip"
+    			android:layout_marginRight="5dip"
+    			android:layout_centerVertical="true">
+				 <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textColor="#00FFFF"
+			        android:textSize="12sp"
+			        android:text="@string/goods_hist_rec"
+			        android:gravity="center"/>     
+			     <TextView android:id="@+id/txt_dlg_hist_recomend"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textColor="#00FFFF"
+			        android:textSize="14sp"
+			        android:textStyle="bold"
+			        android:text="34"
+			        android:gravity="center"/>    
+		        
+		        
+		    </LinearLayout>
+		    
+    </RelativeLayout>
+    
+</LinearLayout>

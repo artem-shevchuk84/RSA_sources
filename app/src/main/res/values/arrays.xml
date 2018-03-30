@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefInterface">
+        <item>DBF</item>
+        <item>XML</item>
+        <item>CSV</item>
+    </string-array>
+
+    <string-array name="prefProtocol">
+        <item>E-mail</item>
+        <item>Ftp</item>
+    </string-array>
+
+    <string-array name="prefOrderBy">
+        <item>Без сортировки</item>
+        <item>По алфавиту</item>
+        <item>По порядк. №</item>
+    </string-array>
+
+    <string-array name="Prices">
+        <item>Цена 1</item>
+        <item>Цена 2</item>
+        <item>Цена 3</item>
+        <item>Цена 4</item>
+        <item>Цена 5</item>
+        <item>Цена 6</item>
+        <item>Цена 7</item>
+        <item>Цена 8</item>
+        <item>Цена 9</item>
+        <item>Цена 10</item>
+        <item>Цена 11</item>
+        <item>Цена 12</item>
+        <item>Цена 13</item>
+        <item>Цена 14</item>
+        <item>Цена 15</item>
+        <item>Цена 16</item>
+        <item>Цена 17</item>
+        <item>Цена 18</item>
+        <item>Цена 19</item>
+        <item>Цена 20</item>
+    </string-array>
+    <string-array name="Days">
+        <item>Воскресенье</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+    </string-array>
+    <string-array name="Months">
+        <item>Января</item>
+        <item>Февраля</item>
+        <item>Марта</item>
+        <item>Апреля</item>
+        <item>Мая</item>
+        <item>Июня</item>
+        <item>Июля</item>
+        <item>Августа</item>
+        <item>Сентября</item>
+        <item>Октября</item>
+        <item>Ноября</item>
+        <item>Декабря</item>
+    </string-array>
+    <string-array name="Reports">
+        <item>Маршрутный лист</item>
+        <item>План посещений на указанный день</item>
+        <item>Реестр оплат</item>
+        <item>Деньги собранные за текущий день</item>
+        <item>Инфо о клиенте</item>
+        <item>Детальная информация о клиенте</item>
+        <item>Сводная дебиторка</item>
+        <item>Сводная дебиторка по клиентам</item>
+        <item>Прайс-лист</item>
+        <item>Все цены на все товары</item>
+        <item>TOP SKU</item>
+        <item>Продажи за выбранный день</item>
+        <item>Сводные продажи</item>
+        <item>Кол-во активных ТТ, сумма, вес.</item>
+        <item>Продажи по брендам</item>
+        <item>За выбранный день</item>
+        <item>Взаиморасчеты</item>
+        <item>По Контрагентам и Торговым точкам</item>
+        <item>Отгрузки</item>
+        <item>Журнал фактических отгрузок</item>
+        <item>Продажи по SKU</item>
+        <item>С указанной даты по сегодня</item>
+        <item>План продаж</item>
+        <item>В разрезе Клиент-ТТ-Бренд</item>
+    </string-array>
+    <string-array name="Databases">
+        <item>БД №1</item>
+        <item>БД №2</item>
+        <item>БД №3</item>
+        <item>БД №4</item>
+    </string-array>
+
+</resources>

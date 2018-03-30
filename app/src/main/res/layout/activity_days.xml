@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bground">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/plan_panel" />
+
+    <View
+        android:id="@+id/plan_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/panel_upper" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@+id/back"
+        android:gravity="center"
+        android:text="@string/text_calendar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="7dip"
+        android:background="@drawable/states_shapes"
+        android:text="@string/text_back"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

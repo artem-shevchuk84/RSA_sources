@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Remote Sales Agent</string>
+  
+  <string name="main_update">Пожалуйста обновитесь\nдо</string>
+  
+  <string name="calc_delete">&lt;</string>
+  
+  <color name="pressed">#ff0000</color>
+  <color name="unpressed">#f4f4f4</color>
+  <color name="unpressed2">#05b2c0</color>
+    
+  <string name="list_order_title">Remote Sales Agent</string>
+    <string name="list_order_date">[Дата]</string>
+    <string name="list_order_time">[Время]</string>
+    <string name="list_order_sum">[Сумма]</string>
+    <string name="list_order_titlesum">Сумма:</string>
+    <string name="list_order_titleord">Заказов:</string>
+    <string name="list_order_curency">&#160;грн.</string>
+    <string name="list_order_paytype">[Безнал]</string>
+    <string name="list_order_client">[Наименование контрагента]</string>
+    <string name="list_order_adres">[Адрес доставки]</string>
+    <string name="list_order_empty">За выбранный период \nзаказов нет!\nКоснитесь экрана на пару 
+    			секунд чтобы вызвать меню с перечнем возможных операций, либо 
+    			нажмите кнопку MENU на устройстве..</string>
+	<string name="list_order_noBD">База данных пуста!\n Для загрузки параметров торговли коснитесь экрана на 
+				пару секунд и выберите соответствующую операцию в контекстном меню, 
+				либо нажмите кнопку MENU на устройстве...</string>
+	<string name="list_order_new">Новый</string>
+	<string name="list_order_neworder">Новый заказ</string>				
+	<string name="list_order_modify">Изменить</string>
+	<string name="list_order_about">О программе</string>
+	<string name="list_order_exit">Выход</string>
+	<string name="list_order_info">Посетите Веб-сайт приложения:\n http://www.rslab.com.ua/</string>
+	<string name="list_order_delete">Удалить</string>
+	<string name="list_order_sync">Синхр.</string>
+	<string name="list_order_map">Карта</string>
+	<string name="list_order_user">Смена БД</string>
+	<string name="list_order_sales">Журнал отгрузок...</string>
+	<string name="list_order_synchronization">Синхронизация</string>
+	<string name="list_order_settings">Настройки</string>
+	<string name="list_order_debit">Дебиторка</string>
+	<string name="list_order_kassa">Сбор средств</string>
+	<string name="list_order_copy">Копировать</string>
+	<string name="list_order_report">Отчеты</string>
+	<string name="list_order_datefilter">Отбор за период...</string>
+	<string name="list_order_warning_noBD">База данных пуста!\n</string>
+	<string name="list_order_warning_noCust">Список клиентов пуст!\n</string>
+	<string name="list_order_warning_notselected">Не выбран заказ!</string>
+	<string name="list_order_warning_selected">Выбран:</string>
+	<string name="list_order_error_copy">Ошибка копирования</string>
+	<string name="list_order_succ_copy">Удачно скопировали</string>
+	<string name="list_order_warning_locked">Уже синхронизирован. Удаление запрещено!</string>
+	<string name="list_order_update_yes">Да</string>
+	<string name="list_order_update_cancel">Не сейчас</string>
+	<string name="list_order_update_title">Обновление до</string>
+	<string name="list_order_update_message">Обнаружена новая версия.\nДля обновления необходимо подключение к интернет и 1,5Мб трафика.\nЖелаете обновиться сейчас?</string>
+	<string name="list_order_update_process">Пожалуйста, дождитесь завершения процесса обновления...</string>
+	<string name="list_order_noregistration">ВНИМАНИЕ!!!\nНе зарегистрированная копия приложения! Есть вероятность потери заказов! Скоро будет отключена возможность сбрасывать заказы через интернет!
+											 Срочно свяжитесь с ИТ-отделом!</string>
+	<string name="list_order_dbselect">Выберите БД</string>										 
+	
+  <string name="prefs_namecode_default">Не выбрано</string>
+	<string name="prefs_lastdwnld_default">Не выполнялось</string>
+	<string name="prefs_interface_default">DBF</string>
+	<string name="prefs_protocol_default">E-mail</string>
+	<string name="prefs_sdload_via">Загрузка через</string>
+	<string name="prefs_sdload_error">Ошибка чтения</string>
+	<string name="prefs_sdload_done">Загрузка выполнена</string>
+	<string name="prefs_sdout_done">Заказы выгружены</string>
+	<string name="prefs_sdout_error">Ошибка выгрузки</string>
+	<string name="prefs_sdload_el">Tv, Cl, Us, Db, TT,</string>
+	<string name="prefs_sdload_nofiles">Нет необх. файлов !!!\n /sdcard/rsa/inbox</string>
+	
+  <string name="map_title">ВИЗИТЫ</string>
+	<string name="map_toDate">На дату</string>    			
+  <string name="head_title">ПАРАМЕТРЫ ЗАКАЗА</string>
+  <string name="head_title_blue">ТЕКУЩИЙ ЗАКАЗ</string>
+  	<string name="head_ok">OK</string>
+  	<string name="head_cancel">Не сохранять</string>
+  	<string name="head_dlg_cancel">Отмена</string>
+  	<string name="head_goods">Товар</string>
+  	<string name="head_addgoods">Подбор товара</string>
+  	<string name="head_save">Сохр.</string>
+  	<string name="head_selectclient">Выберите Контрагента:</string>
+  	<string name="head_selectadress">Выберите торговую точку:</string>
+  	<string name="head_selectWH">Выберите склад</string>
+  	<string name="head_settings">Особые параметры:</string>
+  	<string name="head_WH">СКЛ</string>
+  	<string name="head_paytype">БНАЛ</string>
+  	<string name="head_vat">НДС</string>
+  	<string name="head_delay">ОТС</string>
+  	<string name="head_disc">СК</string>
+  	<string name="head_deliv">ДСТ</string>
+  	<string name="head_noclient">Такого Клиента больше нет в базе, выбран другой!</string>
+  	<string name="head_noshop">Такой точки больше нет в базе, выбрана другая!</string>
+  	<string name="head_client">&#160;Клиент:&#160;</string>
+  	<string name="head_adress">&#160;Адрес:&#160;</string>
+  	<string name="head_warehouse">&#160;Склад:&#160;</string>
+  	<string name="head_paydelay">&#160;Отсрочка платежа:&#160;</string>
+  	<string name="head_days">&#160;дней\n</string>
+  	<string name="head_cashpaytype">&#160;Вид расчета:&#160;</string>
+  	<string name="head_writeremark">&#160;Примечание:&#160;</string>
+  	<string name="head_writedisc">&#160;Скидка:&#160;</string>
+  	<string name="head_debit">&#160;Долг:&#160;</string>
+  	<string name="head_sum">&#160;Сумма по заказу:&#160;</string>
+  	<string name="head_curency">&#160;грн.</string>
+  	<string name="head_textremark">Текст примечания:</string>
+  	<string name="head_clear">Очистить</string>
+  	<string name="head_remove">Убрать</string>
+  	<string name="head_linesisempty">Заказ должен содержать товар!</string>
+  	<string name="head_readonly">&#160;РЕДАКТИРОВАНИЕ ЗАПРЕЩЕНО!</string>
+  	<string name="head_notsaved">Изменение запрещено!</string>
+  	<string name="head_btn_remark">Примеч</string>
+  	<string name="head_empty_shop">(нет точек)</string>
+  	<string name="head_empty_adres">(пусто)</string>
+  	<string name="head_noVAT">Уже подобран товар без НДС!</string>
+  	<string name="head_withVAT">Уже подобран товар с НДС!</string>
+  	<string name="head_topsku">TOP SKU анализ</string>
+  	<string name="head_takephoto">Фото полки</string>
+  	<string name="head_custinfo">Инфо о клиенте</string>
+  	<string name="head_statistics">Статист вкл/выкл</string>
+  	<string name="head_photo">&#160;Фото:&#160;</string>
+  	
+  	
+  <string name="kassa_title">СБОР СРЕДСТВ</string>
+   <string name="kassa_back">Назад</string>
+   <string name="kassa_income">Внесено:&#160;</string>
+   <string name="kassa_debit">Долг:&#160;</string>
+   <string name="kassa_curency">&#160;грн.</string>
+ 
+  <string name="plan_title">ПЛАН ПОСЕЩЕНИЙ</string>	
+  	<string name="plan_back">Назад</string> 
+  	<string name="plan_empty">Ваш план посещений пуст</string>
+  	
+  <string name="sales_title">Отгрузки</string>		
+  	
+  <string name="lines_title">СТРОКИ ЗАКАЗА</string>
+    <string name="lines_ok">OK</string>
+    <string name="lines_add">Добавить товар</string>
+    <string name="lines_empty">В данном заказе нет товара, для его подбора нажмите кнопку Добавить товар... </string>
+    <string name="lines_dlg_name">[Наименование]</string>
+    <string name="lines_dlg_code">[Код 1С]</string>
+    <string name="lines_dlg_price">[Цена]</string>
+    <string name="lines_dlg_discount">Дисконт&#160;</string>
+	<string name="lines_dlg_price_with_discount">Цена со скидкой&#160;</string>
+	<string name="lines_dlg_weight">[Вес]</string>
+    <string name="lines_dlg_rest">[Остаток]</string>
+    <string name="lines_dlg_number">[Кол-во]</string>
+    <string name="lines_dlg_pcs">&#160;шт.</string>
+    <string name="lines_dlg_total">[Итого]</string>
+    <string name="lines_dlg_sum">[Сумма]</string>
+    <string name="lines_dlg_curency">&#160;грн.</string>
+    <string name="lines_txtTotalSum">\u03A3</string>
+  	<string name="lines_txtTotalSum_text">500.00 $</string>
+    	
+  <string name="group_title">ГРУППЫ ТОВАРОВ</string>
+  	<string name="group_name">[Наименование группы]</string>
+  	<string name="group_code">[Код группы]</string>
+  	<string name="group_back">Назад</string>
+  	<string name="group_txtTotalSum">\u03A3</string>
+  	<string name="group_txtTotalSum_text">0.00 $</string>
+  	<string name="group_showall">Все</string>
+  	<string name="group_showgroups">Только группы</string>
+  	<string name="group_showbrands">Только бренды</string>
+  	<string name="list_group_empty">Не найдены группы\n 
+  	    							для отображения!\n
+  	    							Нажмите и удерживайте\n 
+  	    							палец на этом тексте.\n
+  	    							В появившемся меню выберите что отображать.</string>
+  	
+  <string name="dlg_sdload_title">Загрузка данных</string>
+  	<string name="dlg_sdload_table">Таблица</string>
+  	<string name="dlg_sdload_count">Элементов</string>
+  	<string name="dlg_sdload_log">Подождите пожалуйста</string>
+  	
+  <string name="report_title">ОТЧЕТЫ</string>
+	<string name="report_back">Назад</string>
+  	
+  <string name="about_title">О ПРОГРАММЕ</string>
+  	<string name="about_toorders">К заказам</string>
+  	<string name="about_name">\u00A9 2016 Remote Sales Agent</string>
+  	<string name="about_ver">Ver. 3.25 ShareWare (29.09.2017)</string>
+  	<string name="about_www">http://www.rslab.com.ua/</string>
+  	<string name="about_topic1">1. ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ.</string>
+  		<string name="about_topic1_det">Эта программа защищена национальными законами и международными соглашениями об авторском праве. Исключительные права на использование этой программы принадлежат ее автору. 
+										Программой и ее компонентами можно пользоваться бесплатно:\n
+										неограниченный срок, но с ограничениями на функции (demoware).\n
+										Для преодоления вышеназванных ограничений необходимо оплатить лицензионные отчисления правообладателю.
+										Для коммерческого распространения программы требуется письменное согласие правообладателя, с перечислением ему процента от продаж. 
+										Программа поставляется "как есть"! 
+										Программа может включаться в состав платных сборников, помещаться на сайтах, отличных от сайта правообладателя только с разрешения правообладателя. </string>
+  	<string name="about_topic2">2. ОГРАНИЧЕНИЕ ГАРАНТИЙНЫХ ОБЯЗАТЕЛЬСТВ.</string>
+  		<string name="about_topic2_det">Программа может содержать ошибки. Правообладатель не несет ответственность за возможные ошибки программы. 
+										Правообладатель не гарантирует, что функции, содержащиеся в этой программе, будут удовлетворять заявленным требованиям или что работа программы не прервется из-за ошибки. 
+										Правообладатель намеренно отказывается от всех письменно заявленных и предполагаемых по-умолчанию гарантийных обязательств, включая ограничения в применении гарантийных обязательств после определенного срока и годности продукта к продаже. 
+										Ни при каких обстоятельствах правообладатель не несет обязательств перед пользователем за любой вред, физический или коммерческий, нанесенный данной программой, включая упущенную прибыль, потерю данных, ущерб репутации или другой побочный или косвенный вред, произошедший из-за использования или неспособности использования данной программы. Также не принимаются иски на любые другие имущественные требования пользователя программы.</string>
+  	<string name="about_topic3">3. COPYRIGHT</string>
+  		<string name="about_topic3_det">Все исключительные авторские права на программу принадлежат правообладателю. 
+										Программу нельзя дизассемблировать, менять что-либо в ней и дополнять ее новыми функциями. 
+										При распространении программы обязательно указывается имя правообладателя, его контактная информация и сайт правообладателя. </string>
+  	<string name="about_topic4">4. КОНТРОЛЬ НАД СОБЛЮДЕНИЕМ ОБЯЗАТЕЛЬСТВ.</string>
+  		<string name="about_topic4_det">Это лицензионное соглашение соответствует национальным законам. На новой редакции этих законов и основано данное соглашение, отменяющее все остальные соглашения и договоры, ранее применяемые в отношении к данному продукту. 
+										Все спорные вопросы решаются по взаимной договоренности сторон, а если соглашения не было достигнуто, то в судах общей юрисдикции.
+										Автор: Комарев Р. Ю.\nE-mail: admin@rslab.com.ua</string>
+
+  <string name="goods_title">ТОВАРЫ</string>
+  	<string name="goods_name">[Наименование товара]</string>
+  	<string name="goods_price">[Цена]</string>
+  	<string name="goods_discount">[Дисконт]</string>
+	<string name="goods_price_with_discount">[Цена со скидкой]</string>
+  	<string name="goods_curency">&#160;грн.</string>
+  	<string name="goods_rest">[Остаток]</string>
+  	<string name="goods_weight">[Вес]</string>
+  	<string name="goods_gramm">&#160;г/</string>
+  	<string name="goods_pack">[ед]</string>
+  	<string name="goods_code">Код:&#160;</string>
+  	<string name="goods_price1">Цена 1</string>
+  	<string name="goods_writeprice">Цена:&#160;</string>
+  	<string name="goods_writeweight">Вес:&#160;</string>
+  	<string name="goods_writerest">Ост:&#160;</string>
+  	<string name="goods_weight_curency">&#160;г.</string>
+  	<string name="goods_qty">&#160;ед.</string>
+  	<string name="goods_count">Кол-во товара:</string>
+  	<string name="goods_qty_notcorrect">Выбрано некорректное кол-во: 0 ед.</string>
+  	<string name="goods_cancel">Отмена</string>
+  	<string name="goods_delete">Удалить</string>
+  	<string name="goods_back">К группам</string>
+	<string name="goods_txtTotalSum">\u03A3</string>
+  	<string name="goods_txtTotalSum_text">500.00 $</string>
+  	<string name="goods_hist">История заказов:</string>
+  	<string name="goods_title_hist">Дата / Ост / Рек / Зак</string>
+  	<string name="goods_recomend_hist">Рекомендовано к заказу: </string>
+  	<string name="goods_rest_hist">ОСТАТОК: </string>
+  	<string name="goods_hist_date">DATE</string>
+  	<string name="goods_hist_rest">REST</string>
+  	<string name="goods_hist_rec">REC</string>
+  	<string name="goods_hist_ord">ORD</string>
+  	<string name="goods_select">Тип цены:</string>
+  	<string name="goods_check_order">Укажите сортировку в настройках программы!</string>
+  	
+  <string name="debit_title">ДЕБИТОРКА</string>
+  	<string name="debit_empty">По выбранному клиенту дебиторка отсутствует...</string>
+  	<string name="debit_date">[Дата]</string>
+  	<string name="debit_dateto">[ДатаДо]</string>
+  	<string name="debit_sum">[Сумма]</string>
+  	<string name="debit_curency">&#160;грн.</string>
+  	<string name="debit_doctype">Расх./накл. №:&#160;</string>
+  	<string name="debit_doccode">69А0000345&#160;</string> 
+  	<string name="debit_total">Итого:&#160;</string> 
+  	<string name="debit_expiration">Просрочено 0.00 на 0 дн.</string>
+  	<string name="debit_txtExpired">Просрочено&#160;</string>
+  	<string name="debit_txtFor">&#160;на&#160;</string>
+  	<string name="debit_txtDays">&#160;дн.&#160;</string>
+    	
+  <string name="settings_title">НАСТРОЙКИ ПРОГРАММЫ</string>
+  	<string name="settings_settings">Настройки</string>
+  	
+  <string name="preferences_tp">Торговый представитель</string>
+  	<string name="preferences_empty_fio">ФИО не введены!</string>
+  	<string name="preferences_fio">ФИО</string>
+  	<string name="preferences_empty_code">Код не введен</string>
+  	<string name="preferences_code">Код в УС</string>
+  	<string name="preferences_empty_serial">Номер не определен</string>
+  	<string name="preferences_serial">IMEI аппарата</string>
+  	<string name="preferences_monitor_serial">ИД Номер</string>
+  <string name="preferences_work">Рабочие</string>
+  	<string name="preferences_pricetype">Типы цен</string>
+  	<string name="preferences_nds">Добавлять НДС, %</string>
+  	<string name="preferences_nds_sum">0</string>
+  	<string name="preferences_currency_summary">грн.</string>
+  	<string name="preferences_currency">Валюта</string>
+  	<string name="preferences_packs">Заказывать в уп.</string>
+  	<string name="preferences_vozvrat">Возвраты</string>
+  	<string name="preferences_erarh">Иерархия в группах</string>
+  	<string name="preferences_modaluse">Фикс. калькулятор</string>
+  <string name="preferences_system">Служебные</string>
+  	<string name="preferences_sdload">Загрузка с SDCard</string>
+	<string name="preferences_sdload_no">Загрузка с SDCard (игнор FTP настроек)</string>
+  	<string name="preferences_sdout">Выгрузка на SDCard</string>
+  	<string name="preferences_lastsd_dnld">/sdcard/rsa/inbox</string>
+  	<string name="preferences_lastsd_out">/sdcard/rsa/outbox</string>
+  	<string name="preferences_optimization">Оптимизация БД</string>
+  	<string name="preferences_last_optimization">Последняя оптимизация: 01.01.01</string>
+  	<string name="preferences_orderhyst">История заказов</string>
+  	<string name="preferences_orderhyst_det">Период хранения (дни)</string>
+  	<string name="preferences_extfilename">Расшир. имена файлов</string>
+  	<string name="preferences_gps">Запись GPS</string>
+  	<string name="preferences_on">Активен</string>
+  	<string name="preferences_Coord">Выгрузить трек</string>
+  	<string name="preferences_Coord_summary">/sdcard/rsa/track.log</string>
+  	<string name="preferences_Coord_done">Выполнено</string>
+  	<string name="preferences_Coord_errCr">Ошибка создания файла!</string>
+  	<string name="preferences_Coord_errWr">Ошибка записи файла!</string>
+  	<string name="preferences_Coord_errCl">Ошибка при закрытии файла!</string>
+  <string name="preferences_sync">Синхронизация</string>
+  	<string name="preferences_ide">Интерфейc</string>
+  	<string name="preferences_dbf">DBF</string>
+	<string name="preferences_protocol">Протокол</string>
+	<string name="preferences_email">E-mail</string>
+    	<string name="preferences_empty">Не указано</string>
+    	<string name="preferences_not">Не выполнялось</string>
+    	<string name="preferences_notactive">Не активно</string>
+    	<string name="preferences_active">Активно</string>
+  <string name="preferences_Info">Информация</string>
+    <string name="preferences_Info_summary">DB=?Mb ORD=?Mb GPS=?Mb</string>
+  <string name="preferences_monitoring">GPS Мониторинг</string>
+    <string name="preferences_mon_param">Параметры мониторинга</string>
+    <string name="preferences_mon_details">Детальные настройки</string>
+    <string name="preferences_mon_coord">Передача координат</string>
+    <string name="preferences_mon_coordkonti">Дублировать на КОНТИ</string>
+    <string name="preferences_mon_rate">Опрос GPS, сек.</string>
+    <string name="preferences_mon_title">Опрос GPS</string>
+    <string name="preferences_sendc_title">Передача координат</string>
+    <string name="preferences_orders_autosend">Автоотправка заказов</string>
+    <string name="preferences_mon_restsend">Передача остатков</string>
+    <string name="preferences_restsend">Отправка остатков в WEB</string>
+    <string name="preferences_autosync_activate">Автоотправка</string>
+    <string name="preferences_autosync_startAt">Начало, час</string>
+    <string name="preferences_autosync_stopAt">Конец, час</string>
+    <string name="preferences_autosync_interval">Интервал, мин</string>
+    
+    
+    <string name="preferences_mon_sendrate">Интервал отпр. сек.</string>
+    <string name="preferences_mon_host">Хост</string>
+    <string name="preferences_mon_hostport">Порт</string>
+    <string name="preferences_sundaywork">По воскресеньям</string>
+    <string name="preferences_sundaywork_summary">Мониторинг по воскресеньям</string>
+    <string name="preferences_mon_starthour">Начало работы, час</string>
+    <string name="preferences_mon_endhour">Конец работы, час</string>
+    <string name="preferences_mon_password_auth">Авторизация</string>
+    <string name="preferences_mon_password_title">Пароль</string>
+    <string name="preferences_mon_password_summary">Разрешить редактирование</string>
+    
+   <string name="preferences_inout_title">Загрузка/Выгрузка</string>
+    <string name="preferences_inout_usb">Через USB-кабель</string>
+    <string name="preferences_inout_operation">Операции с данными</string>
+    <string name="preferences_lighttheme">Светлая тема</string>
+    <string name="preferences_lighttheme_summary">Светлое оформление</string>
+    <string name="preferences_showrecinlist">Рекоменд. заказ</string>
+    <string name="preferences_showrecinlist_summary">Отображать в списке товара</string>
+	<string name="preferences_showshopaddress">Адреса точек</string>
+	<string name="preferences_longattributes">Расшир. DBF-поля</string>
+    <string name="preferences_vatrate_summary">20</string>
+    <string name="preferences_vatrate">Ставка НДС, %</string>
+    <string name="preferences_orderby">Порядок товара</string>
+    <string name="preferences_orderby_summary">Без сортировки</string>
+    <string name="preferences_orderby_default">Без сортировки</string>
+    <string name="preferences_plan">План посещений</string>
+    <string name="preferences_plan_summary">Использовать план</string>
+    <string name="preferences_merch">Мерчендайзер</string>
+    <string name="preferences_merch_summary">Только остатки</string>
+    
+	
+  <string name="sync_title">СИНХРОНИЗАЦИЯ</string>
+  	<string name="sync_send">Передать</string>
+  	<string name="sync_download">Принять</string>
+  	<string name="sync_param">Параметры</string>
+  
+  <string name="send_title">Передать:</string>
+	<string name="send_date">Дата для передачи</string>
+	<string name="send_send">Передать заказы</string>
+	<string name="send_already">В фоне уже происходит синхронизация!</string>
+	<string name="send_connecting">> Установка соединения...\n</string>
+	<string name="send_wait">Дождитесь завершения процесса синхронизации!</string>
+	<string name="send_err_makingdbf">&#160;Ошибка при формировании файлов! (JDBF)\n</string>
+	<string name="send_err_writedbf">&#160;Ошибка при записи файлов! (I/O)\n</string>
+	<string name="send_dbfcreated">> Файлы сформированы...&#160;</string>
+	<string name="send_orders">Заказов:&#160;</string>
+	<string name="send_qty">&#160;шт.\n</string>
+	<string name="send_err_makingarch">&#160;Ошибка при формировании архива! (LZMA)\n</string>
+	<string name="send_archcreated">> Архивы для передачи созданы...\n</string>
+	<string name="send_orderson">> Заказы за&#160;</string>
+    <string name="send_sended">&#160;успешно отправлены!\n</string> 
+    <string name="send_err_sendmessage">&#160;Ошибка при отправке заказов! (not exception)\n Проверьте параметры связи...\n</string>
+    <string name="send_err_sendmessage_jmail">&#160;Ошибка при отправке заказов! (JMAIL)\n Проверьте параметры связи...\n</string>
+    <string name="send_license">Чтобы использовать эту функцию Вам необходимо пройти регистрацию!\n 
+    							Для этого свяжитесь с нами по адресам:\n 
+    							admin@rslab.com.ua\n
+    							http://www.rslab.com.ua/</string>
+    <string name="send_nointernet">Нет интернет соединения\n</string>
+    <string name="send_ftp_connected">> FTP Соединение - OK\n</string>
+    <string name="send_ftp_refused">Сервер разорвал соединение!\n</string>
+    <string name="send_ftp_login">> Имя/Пароль - ОК\n</string>
+    <string name="send_ftp_badlogin">> Имя/Пароль - Ошибка\n</string>
+    <string name="send_ftp_chdir">> Отсылка в&#160;</string>
+    <string name="send_ftp_chdir_error">Путь не найден: \n</string>
+    <string name="send_ftp_binary">> Тип файлов - бинарный. Происходит отправка..\n</string>
+    <string name="send_ftp_binary_error">Невозможно установить бинарный тип файлов\n Свяжитесь с администратором ftp сервера!</string>
+    <string name="send_ftp_sended">> Файлы переданы\n</string>
+    <string name="send_ftp_send_error">Ошибка при передаче файлов!\n</string>
+	<string name="send_ftp_logout">\n> Отключение от ftp - OK\n</string>
+	<string name="send_ftp_logout_error">Ошибка при отключении (Не страшно)\n</string>
+	<string name="send_ftp_connect_error">Ошибка при подключении (FTP)\n</string>
+	<string name="send_ftp_disconnect_error">Ошибка при отключении (FTP)\n</string>
+	<string name="send_photo">Фото</string>
+	<string name="send_new">Новые</string>
+	
+	
+
+  <string name="download_title">Принять:</string>
+  	<string name="download_accept">Принять данные</string>
+  	<string name="download_table">Таблица</string>
+  	<string name="download_number">Кол-во элем.</string>
+  	<string name="download_background">В фоне уже происходит синхронизация!</string>
+  	<string name="download_connecting">> Установка соединения...\n</string>
+  	<string name="download_connected">> Соединение установлено...\n> Всего сообщений:&#160;</string>
+  	<string name="download_err_connect">&#160;Ошибка при подключении...\n</string>
+  	<string name="download_received">> Сообщения получены...\n</string>
+  	<string name="download_err_receiving">&#160;Ошибка при получении сообщений...\n</string>
+  	<string name="download_scan">> Сканирование сообщения №</string>
+  	<string name="download_filesfound">> Найдены вложенные файлы...\n</string>
+  	<string name="download_correctfound">> Найдены файлы c тов, кл, ус, деб, тт \n</string>
+  	<string name="download_found_WH">> Дополнительно найден файл со складами...\n</string>
+  	<string name="download_found_GR">> Дополнительно найден файл с гр. товаров...\n</string>
+  	<string name="download_found_BR">> Дополнительно найден файл с брендами...\n</string>
+  	<string name="download_found_Work">> Дополнительно найден файл workinf...\n</string>
+  	<string name="download_found_Plan">> Дополнительно найден файл с планом...\n</string>
+  	<string name="download_found_Sold">> Дополнительно найден файл с продажами...\n</string>
+  	<string name="download_unpacking">> Все файлы получены! Распаковываем...\n</string>
+  	<string name="download_err_msg">&#160;Ошибка. Некорректное письмо! \n</string>
+  	<string name="download_err_scan">&#160;Ошибка сканирования/разбора сообщения №</string>
+  	<string name="download_all_unpack">> Все файлы распакованы...\n</string>
+  	<string name="download_err_unpack">&#160;Ошибка распаковки файлов! (LZMA)\n</string>
+  	<string name="download_msg_notfound">> Сообщений с корректными данными не найдено!\n</string>
+  	<string name="download_clearbox">> Входящий ящик очищен...\n</string>
+  	<string name="download_err_delete">&#160;Ошибка при попытке удалить все сообщения (JMAIL)\n</string>
+  	<string name="download_disconnect">> Успешно отсоединились!\n</string>
+  	<string name="download_err_connect_jmail">&#160;Ошибка при попытке отсоединения! Не критично (JMAIL)\n</string>
+  	<string name="download_loading">> Загружаем данные из файлов...\n</string>
+  	<string name="download_loading_succ">\n> Загрузка данных УСПЕШНО завершена!\n</string>
+  	<string name="download_err_dbf">&#160;Ошибка при загрузке dbf-файлов в базу данных!(JDBF)\n</string>
+  	<string name="download_err_xml">&#160;Ошибка при загрузке xml-файлов в базу данных!(XML)\n</string>
+  	<string name="download_wait">Дождитесь завершения процесса синхронизации!</string>
+  	<string name="download_license">\nЧтобы использовать FTP протокол для приема данных Вам необходимо пройти регистрацию!\n 
+    							Для этого свяжитесь с нами по адресам:\n 
+    							admin@rslab.com.ua\n
+    							http://www.rslab.com.ua/</string>
+    <string name="download_ftpfilesfound">> Папка просканирована...\n</string>
+    <string name="download_ftpfilesnotfound">Нет необходимых файлов...\n</string>
+    <string name="download_ftpfilesdownloaded">> Все файлы загружены...\n</string>
+    <string name="download_ftpdownload_error">Ошибка в процессе приема файлов! \n</string>
+    <string name="download_ftpBD">Ошибка при загрузке в БД!\n</string>
+    <string name="download_ftp_chdir">> Прием из&#160;</string>
+    
+
+  <string name="sendprm_title">Параметры:</string> 
+  	<string name="sendprm_prm">Параметры связи</string>
+  	<string name="sendprm_username">Username (E-mail address)</string>
+  	<string name="sendprm_password">Password</string>
+  	<string name="sendprm_smtp">SMTP Server</string>
+  	<string name="sendprm_port">port</string>
+  	<string name="sendprm_pop">POP Server</string>
+  	<string name="sendprm_sendto">Send to: (E-mail address)</string>
+  	<string name="sendprm_apply">Применить</string>
+  	<string name="sendprm_saved">Параметры сохранены!</string>
+  	<string name="sendprm_wait">Дождитесь завершения процесса синхронизации!</string>
+  	<string name="ftpsendprm_login">Логин (Имя пользователя)</string>
+  	<string name="ftpsendprm_pass">Пароль</string>
+  	<string name="ftpsendprm_server">Сервер FTP</string>
+  	<string name="ftpsendprm_port">Порт</string>
+  	<string name="ftpsendprm_inbox">/obmen/tp002/inbox</string>
+  	<string name="ftpsendprm_outbox">/obmen/tp002/outbox</string>
+  	
+  <string name="rsadb_clients">Клиенты</string>
+  <string name="rsadb_brands">Бренды</string>
+  <string name="rsadb_conditions">Условия</string>
+  <string name="rsadb_plan">План</string>
+  <string name="rsadb_sold">Продажи</string>
+  <string name="rsadb_debit">Дебиторка</string>
+  <string name="rsadb_goods">Товары</string>
+  <string name="rsadb_groups">Группы</string>
+  <string name="rsadb_tt">ТТ</string>
+  <string name="rsadb_wh">Склады</string>
+  <string name="rsadb_workinf">WORKINF</string>
+  
+  <string name="report_select_client">Выбери клиента</string>
+	<string name="text_days_of_week">Дни недели</string>
+	<string name="text_calendar">КАЛЕНДАРЬ</string>
+	<string name="text_back">Назад</string>
+	<string name="text_load_ftp_settings">Загружать Настройки FTP/Email</string>
+	<string name="text_goods">ТОВАРЫ</string>
+    <string name="eye">eye</string>
+
+
+</resources>

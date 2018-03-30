@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <LinearLayout 	android:layout_width="0dp"
+    				android:layout_height="wrap_content"
+    				android:orientation="vertical"
+    				android:gravity="left"
+    				android:paddingLeft="3dip"
+    				android:paddingRight="3dip"
+    				android:paddingTop="2dip"
+    				android:paddingBottom="2dip"
+    				android:layout_weight="9">
+		<TextView 
+		    android:id="@+id/txtSalout_item_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#000000"
+		    android:text="Пряники обалденные со сгущенкой 60 гр."/>
+	</LinearLayout>
+	<LinearLayout 	android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:orientation="vertical"
+    				android:gravity="left"
+    				android:paddingLeft="3dip"
+    				android:paddingRight="3dip"
+    				android:paddingTop="2dip"
+    				android:paddingBottom="2dip"
+    				android:layout_weight="1">
+		<TextView 
+		    android:id="@+id/txtSalout_item_price"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#000000"
+		    android:text="12.10"/>
+	</LinearLayout>
+	<LinearLayout 	android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:orientation="vertical"
+    				android:gravity="left"
+    				android:paddingLeft="3dip"
+    				android:paddingRight="3dip"
+    				android:paddingTop="2dip"
+    				android:paddingBottom="2dip"
+    				android:layout_weight="1">
+		<TextView 
+		    android:id="@+id/txtSalout_item_qty"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#000000"
+		    android:text="6"/>
+	</LinearLayout>
+	<LinearLayout 	android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:orientation="vertical"
+    				android:gravity="left"
+    				android:paddingLeft="3dip"
+    				android:paddingRight="3dip"
+    				android:paddingTop="2dip"
+    				android:paddingBottom="2dip"
+    				android:layout_weight="1">
+		<TextView 
+		    android:id="@+id/txtSalout_item_sum"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textColor="#000000"
+		    android:text="72.60"/>
+	</LinearLayout>
+
+</LinearLayout>

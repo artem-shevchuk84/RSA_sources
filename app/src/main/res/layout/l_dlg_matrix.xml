@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/dlg_matrix"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:padding="3dp">
+
+    <TextView
+        android:id="@+id/matrixName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:paddingBottom="2dp"
+		android:textColor="#FFFFFF"      
+        android:text="[Название товара]"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<LinearLayout 
+    	    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    <TextView
+		        android:id="@+id/matrix1C"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="[Код1С]"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixPrice"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="[Цена]"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixWeight"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="[Вес]"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixRest"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="[Остаток]"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixCust"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="K:7891"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixShop"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="Sh:99"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <TextView
+		        android:id="@+id/matrixM"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FFFFFF" 
+		        android:text="M:1"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        <TextView
+			        android:id="@+id/matrixA"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FFFFFF" 
+			        android:text="A:0.569"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        <TextView
+			        android:id="@+id/matrixC"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FFFFFF" 
+			        android:text="C:1"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        <TextView
+			        android:id="@+id/matrixD"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FFFFFF" 
+			        android:text="D:2014-05-22"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        <TextView
+			        android:id="@+id/matrixS"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FFFFFF" 
+			        android:text="S:57"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	</LinearLayout>
+    	<LinearLayout 
+    	    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:text="Остаток у клиента"
+		        android:textColor="#FFFFFF" 
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		    <EditText
+		        android:id="@+id/matrixEditRest"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:numeric="integer"
+				android:inputType="number"
+				android:maxLines="1"
+				android:maxLength="6"
+		        android:text="0"
+		        android:ems="10" >
+		    </EditText>
+		    <TextView
+		        android:id="@+id/matrixVproc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textColor="#FFFFFF" 
+				android:text="Процент возврата: 25%"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			<TextView
+				android:id="@+id/matrixCustomField1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:visibility="gone"
+				tools:text="Кастомное поле 1"
+				tools:visibility="visible" />
+
+		    <TextView
+		        android:id="@+id/matrixRecomended"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textColor="#FFFFFF" 
+				android:text="Рекоменд. заказ: 2 ед."
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+    		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="5dp"
+				android:layout_gravity="center"
+				android:text="Заказ менеджера"
+				android:textColor="#FFFFFF" 
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+    		<EditText
+		        android:id="@+id/matrixEditOrd"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:numeric="integer"
+				android:inputType="number"
+				android:maxLines="1"
+				android:maxLength="6"
+		        android:text="0"
+		        android:ems="10" >
+		    </EditText>
+		    <TextView
+		        android:id="@+id/matrixSum"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:textColor="#FFFFFF" 
+				android:text="[Сумма]"
+				android:textAppearance="?android:attr/textAppearanceSmall" />
+		</LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:paddingBottom="2dp"
+		android:textColor="#FFFFFF" 
+		android:gravity="center"     
+        android:text="История:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	<TextView
+    	    android:id="@+id/matrix_date9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="15.05.2014"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_rest9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ОСТ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_return9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ВЗРТ: 0"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    	<TextView
+    	    android:id="@+id/matrix_order9"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:textColor="#FFFFFF" 
+	        android:text="ЗАКАЗ: 1"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+</LinearLayout>

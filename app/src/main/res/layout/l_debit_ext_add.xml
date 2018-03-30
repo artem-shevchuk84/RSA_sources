@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/debit_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="43dip"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/blue_line" />
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="43dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/debit_pbtn_prev"
+            android:gravity="center"
+            android:text="ПРИНЯТЬ СУММУ"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/blackBorder"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/debit_panel"
+            android:src="@drawable/black_border" />
+
+        <ImageView
+            android:id="@+id/dropShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_below="@+id/blackBorder"
+            android:src="@drawable/shadow" />
+
+        <Button
+            android:id="@+id/debit_pbtn_prev"
+            android:layout_width="43dip"
+            android:layout_height="43dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/states_btn_save" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="43dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="43dip"
+            android:background="#50ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinCustomers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinDebts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinCustomers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinDebts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Сумма"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/textRemark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCancel"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1mm"
+            android:background="#2822b14c"
+            android:gravity="left"
+            android:textColor="#ababab"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="43dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/states_btn_cancel"
+            android:textColor="#ffffff"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:text="@string/head_cancel"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

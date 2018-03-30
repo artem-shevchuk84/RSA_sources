@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+     
+     <RelativeLayout
+    	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content">
+     	<TextView android:id="@+id/txtOrderedCount_goods"
+    		android:textSize="20sp"
+        	android:text=""
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:textColor="#000000"
+        	android:textStyle="bold"
+        	
+        	android:layout_marginRight="3dip"/>
+    	<TextView android:id="@+id/txtName_goods"
+    		android:textSize="16sp"
+        	android:text="@string/goods_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_toLeftOf="@+id/txtOrderedCount_goods"/>
+     </RelativeLayout>
+    
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:id="@+id/price_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_alignParentLeft="true"
+			android:orientation="horizontal">
+
+			<TextView android:id="@+id/txtPrice_goods"
+				android:textSize="14sp"
+				android:text="@string/goods_price"
+				android:textColor="#00FF00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<TextView android:id="@+id/txtDiscount_goods"
+				android:textSize="14sp"
+				android:text="@string/goods_discount"
+				android:textColor="#00FF00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"/>
+			<TextView android:id="@+id/txtPriceWithDiscount_goods"
+				android:textSize="14sp"
+				android:text="@string/goods_price_with_discount"
+				android:textColor="#00FF00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"/>
+
+		</LinearLayout>
+      
+         	
+        <TextView android:id="@+id/txtRest_goods"
+         	android:textSize="14sp"
+         	android:text="@string/goods_rest"
+         	android:textColor="#FF0000"
+         	android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:layout_alignParentRight="true"
+         	android:layout_marginRight="3dip"/>
+        
+        <LinearLayout 	android:id="@+id/rest_info"
+            			android:layout_width="wrap_content"
+		         		android:layout_height="wrap_content"
+		         		android:gravity="center_horizontal"
+		         		android:layout_toRightOf="@+id/ln_weight_goods"
+		         		android:layout_toLeftOf="@+id/price_info"
+		         		android:orientation="horizontal">
+		        <TextView android:id="@+id/txt_rec_goods"
+		         	android:textSize="14sp"
+		         	android:text="0"
+		         	android:textColor="#FF00FF"
+		         	android:textStyle="bold"
+		         	android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"/>
+        		<TextView 
+		         	android:textSize="14sp"
+		         	android:text="/"
+		         	android:textColor="#FF00FF"
+		         	android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"/>
+        		<TextView android:id="@+id/txt_rest_goods"
+		         	android:textSize="14sp"
+		         	android:text="0"
+		         	android:textColor="#FF00FF"
+		         	android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        
+         	
+        <LinearLayout android:id="@+id/ln_weight_goods" 
+                android:layout_width="wrap_content"
+     			android:layout_height="wrap_content"
+     			android:orientation="horizontal"
+     			android:layout_centerInParent="true">
+     			 	 	
+        		<TextView android:id="@+id/txtWeight_goods"
+         				android:textSize="14sp"
+         				android:text="@string/goods_weight"
+         				android:textColor="#FF6400"
+			         	android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+        		<TextView android:id="@+id/txtSep_goods"
+         				android:textSize="14sp"
+         				android:text="@string/goods_gramm"
+         				android:textColor="#FF6400"
+			         	android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+        		<TextView android:id="@+id/txtUn_goods"
+         				android:textSize="14sp"
+         				android:text="@string/goods_pack"
+         				android:textColor="#FF6400"
+         				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+        		<TextView 
+         				android:textSize="14sp"
+         				android:text="("
+         				android:textColor="#FF6400"
+         				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+        		<TextView android:id="@+id/txtQ_goods"
+         				android:textSize="14sp"
+         				android:text=""
+         				android:textColor="#FF6400"
+         				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+        		<TextView 
+         				android:textSize="14sp"
+         				android:text=")"
+         				android:textColor="#FF6400"
+         				android:layout_width="wrap_content"
+         				android:layout_height="wrap_content"/>
+         </LinearLayout>
+         	
+     	                 	
+    </RelativeLayout>
+   
+ </LinearLayout>

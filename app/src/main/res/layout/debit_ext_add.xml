@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/debit_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/panel_upper" />
+
+        <Button
+            android:id="@+id/debit_pbtn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignLeft="@+id/debit_panel"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/states_shapes"
+            android:text="Сохранить"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="3dip"
+            android:layout_toRightOf="@+id/debit_pbtn_prev"
+            android:gravity="center"
+            android:text="ПРИНЯТЬ СУММУ"
+            android:textColor="#ffff00"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinCustomers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinDebts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinCustomers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinDebts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1mm"
+            android:layout_marginRight="1mm"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Сумма"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/textRemark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCancel"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1mm"
+            android:background="#2822b14c"
+            android:gravity="left"
+            android:textColor="#ababab"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/states_shapes2"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:text="@string/head_cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

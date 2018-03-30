@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_alignParentTop="true"
+    	android:paddingTop="43dip"
+        android:orientation="vertical">
+    
+    	<ListView 	android:id="@+id/android:list" 
+         			android:layout_height="wrap_content" 
+     				android:layout_width="fill_parent"
+     				android:fastScrollEnabled="true"/>
+     
+        <LinearLayout android:id="@+id/android:empty" 
+         		   android:layout_width="fill_parent"
+     			   android:layout_height="fill_parent">
+     	   <TextView android:id="@+id/txtEmpty" 
+      		 		android:layout_height="fill_parent"
+      		 		android:layout_width="fill_parent"
+      		 		android:layout_margin="15dp" 
+      		 		android:text="@string/list_order_empty" 
+      		 		android:layout_gravity="center"
+      		 		android:gravity="center"
+      		 		android:textAppearance="?android:attr/textAppearanceLarge"/>         
+     	 </LinearLayout>
+     	 <LinearLayout android:id="@+id/main_blank_area" 
+      		 android:layout_height="fill_parent"
+      		 android:layout_width="fill_parent">
+     	 </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+    
+    <ImageView	android:id="@+id/main_panel"
+		    	android:layout_height="43dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/blue_line"
+    			android:layout_alignParentTop="true"/>
+    
+    <TextView   android:id="@+id/main_update"
+		    	android:layout_height="43dip"
+    			android:layout_width="wrap_content"
+    			android:layout_alignParentTop="true" 
+    			android:layout_toLeftOf="@+id/main_pbtn_prev"
+    			android:layout_alignParentLeft="true"
+    			android:text="Заказов: 0 Сумма: 0.00"
+    			android:textColor="#ffffff"
+    			android:gravity="center"
+    			android:textSize="14sp"/>
+    
+    <ImageView	android:id="@+id/blackBorder"
+		    	android:layout_height="1px"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/black_border"
+				android:layout_below="@+id/main_panel"/>
+    
+    <ImageView	android:id="@+id/dropShadow"
+		    	android:layout_height="3dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/shadow"
+    			android:layout_below="@+id/blackBorder"/>
+    
+    <Button	    android:id="@+id/main_pbtn_next"
+		    	android:layout_height="43dip"
+    			android:layout_width="43dip"
+    			android:background="@drawable/states_btn_plus"
+    			android:layout_alignParentTop="true"
+    			android:layout_alignParentRight="true"/>
+    
+    <Button	    android:id="@+id/main_pbtn_prev"
+		    	android:layout_height="43dip"
+    			android:layout_width="43dip"
+    			android:background="@drawable/states_btn_sync"
+    			android:layout_alignParentTop="true"
+    			android:layout_toLeftOf="@+id/main_pbtn_next"
+    			android:paddingRight="1px"/>
+    
+    
+    
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:background="#50ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dip"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:background="#50ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="86dip"/>
+    
+    <ImageView	android:id="@+id/dropShadowdown"
+		    	android:layout_height="3dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/shadow_down"
+    			android:layout_above="@+id/downPanel_layout"
+    			android:visibility="invisible"/>
+    <RelativeLayout android:id="@+id/downPanel_layout"
+        		android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_alignParentBottom="true"
+    			android:visibility="invisible">
+		    <ImageView	android:id="@+id/downPanel"
+				    	android:layout_height="20dip"
+		    			android:layout_width="fill_parent"
+		    			android:src="@drawable/gray_line"
+		    			android:layout_alignParentTop="true"/>
+		    
+			    <TextView   android:id="@+id/main_currentDB"
+					    	android:layout_height="wrap_content"
+			    			android:layout_width="wrap_content"
+			    			android:layout_centerInParent="true" 
+			    			android:text="БД №1: Одесса Комарев Р Ю"
+			    			android:textColor="#ff0000"
+			    			android:gravity="center"
+			    			android:textSize="11sp"
+			    			android:textStyle="bold"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

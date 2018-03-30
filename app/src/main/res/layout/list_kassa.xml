@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+	
+    <TextView android:id="@+id/txtName_kassa"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:paddingTop="5dip"
+		    android:paddingLeft="1mm"
+		    android:textStyle="bold"
+		    android:text="ООО Аврамов"/>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentLeft="true"
+		     android:orientation="horizontal">
+		     	<TextView android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingLeft="1mm"
+					    android:paddingBottom="3dip"
+					    android:textSize="14sp"
+					    android:textColor="#BBBB00"
+					    android:text="@string/kassa_debit"/>
+	            <TextView android:id="@+id/txtDebit_kassa"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingBottom="3dip"
+					    android:textSize="14sp"
+					    android:textColor="#BBBB00"
+					    android:text="0"/>
+	            <TextView android:id="@+id/txtCurrency_kassa"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingBottom="3dip"
+					    android:textSize="14sp"
+					    android:textColor="#BBBB00"
+					    android:text="@string/kassa_curency"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentRight="true"
+		     android:orientation="horizontal">    
+		    	<TextView android:id="@+id/txtCash_kassa"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingBottom="3dip"
+				    android:textSize="14sp"
+				    android:textColor="#00BB00"
+				    android:text="0"/>
+		</LinearLayout>
+	</RelativeLayout>
+    
+</LinearLayout>

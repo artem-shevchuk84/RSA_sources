@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/plan_panel"
+        tools:background="#00ff00" />
+
+    <View
+        android:id="@+id/plan_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_line" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back"
+        android:gravity="center"
+        android:text="@string/text_calendar"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/blackBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/plan_panel"
+        android:background="@drawable/black_border" />
+
+    <View
+        android:id="@+id/dropShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+id/blackBorder"
+        android:background="@drawable/shadow" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="43dip"
+        android:layout_height="43dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/states_btn_back" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="43dip"
+        android:background="#50ffffff" />
+
+</RelativeLayout>

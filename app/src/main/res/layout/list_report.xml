@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+	
+     	<TextView android:id="@+id/txtName_report"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="19sp"
+			    android:paddingTop="3dp"
+			    android:paddingLeft="1mm"
+			    android:paddingRight="1mm"
+			    android:paddingBottom="2dp"
+			    android:text="Маршутный лист"/>
+     	<TextView android:id="@+id/txtDetails_report"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="14sp"
+			    android:paddingTop="2dp"
+			    android:paddingLeft="1mm"
+			    android:paddingRight="1mm"
+			    android:paddingBottom="3dp"
+			    android:textStyle="italic"
+			    android:text="План посещений на выбранный день"/>
+    
+    
+</LinearLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 	
+    	  android:layout_width="fill_parent"
+    	  android:layout_height="fill_parent"
+    	  android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/showreport_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center" />
+    	  
+    <GridView android:id="@+id/showreport_grid"
+        	android:layout_width="fill_parent"
+    	  	android:layout_height="fill_parent"
+    	  	android:verticalSpacing="15dp"
+    	  	android:horizontalSpacing="2dp"
+    	  	android:textColor="#FFFFFF"
+    	  	android:numColumns="3"
+    	  	android:columnWidth="10dp"
+    	  	android:stretchMode="columnWidth"
+    	  	android:gravity="left">
+    </GridView>
+</LinearLayout>

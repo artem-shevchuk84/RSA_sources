@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="@string/preferences_tp">
+               	<EditTextPreference
+                	android:name="Name Preference"
+                	android:summary="@string/preferences_empty_fio"
+                	android:defaultValue=""
+                	android:title="@string/preferences_fio"
+                	android:key="prefName"
+                	android:maxLength="40"/>
+				<EditTextPreference
+                	android:name="Code Preference"
+                	android:summary="@string/preferences_empty_code"
+                	android:defaultValue=""
+                	android:title="@string/preferences_code"
+                	android:key="prefCode"
+					android:maxLength="10"/>
+				<Preference
+                	android:name="Serial Preference"
+                	android:summary="@string/preferences_empty_serial"
+                	android:defaultValue=""
+                	android:title="@string/preferences_serial"
+                	android:key="prefSerial"/>
+				<CheckBoxPreference
+                        android:title="@string/preferences_merch"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_merch_summary"
+                        android:key="prefMerchOnly"/> 
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/preferences_work">
+			<CheckBoxPreference
+				android:title="Детализация по складам"
+				android:defaultValue="false"
+				android:summary="Показывать товар если есть"
+				android:key="prefSkladdet"/>
+			<CheckBoxPreference
+				android:title="Не давать менять Клиента"
+				android:defaultValue="true"
+				android:summary="Если отобрали хоть один товар"
+				android:key="prefFixCustomer"/>
+			<CheckBoxPreference
+				android:title="Добавить дату доставки"
+				android:defaultValue="false"
+				android:summary="Добавить кнопку для даты доставки"
+				android:key="prefUsedelivery"/>
+			<CheckBoxPreference
+                        android:title="@string/preferences_plan"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_plan_summary"
+                        android:key="prefUsingPlan"/>
+			<CheckBoxPreference
+				android:title="Разложить клиентов по дням"
+				android:defaultValue="false"
+				android:summary="Дополнительный экран при новом заказе"
+				android:key="prefUseExtPlan"/>
+				<ListPreference
+                        android:title="@string/preferences_orderby"
+                        android:summary="@string/preferences_orderby_summary"
+                        android:key="prefOrderBy"
+                        android:defaultValue="@string/preferences_orderby_default"
+                        android:entries="@array/prefOrderBy"
+                        android:entryValues="@array/prefOrderBy" />
+				<EditTextPreference
+                	android:name="VATRate Preference"
+                	android:summary="@string/preferences_vatrate_summary"
+                	android:defaultValue="20"
+                	android:title="@string/preferences_vatrate"
+                	android:key="prefVATRate"
+                	android:numeric="integer"
+					android:maxLength="2"/>
+			<CheckBoxPreference
+				android:title="Длинные комментарии"
+				android:defaultValue="false"
+				android:summary="Разрешить комментарии до 200 симв"
+				android:key="longComment"/>
+                <CheckBoxPreference
+                        android:title="@string/preferences_longattributes"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_notactive"
+                        android:key="prefLongAttributes"/>
+                <CheckBoxPreference
+                        android:title="@string/preferences_pricetype"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_notactive"
+                        android:key="prefPricetype" />
+                <CheckBoxPreference
+                        android:title="@string/preferences_lighttheme"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_lighttheme_summary"
+                        android:key="prefLightThemeKey" />    
+                <CheckBoxPreference
+                        android:title="@string/preferences_showrecinlist"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_showrecinlist_summary"
+                        android:key="prefShowRecInList" />   
+                <EditTextPreference
+	                	android:name="Currency"	                	
+	                	android:defaultValue="@string/preferences_currency_summary"
+	                	android:title="@string/preferences_currency"
+	                	android:key="prefCurrency"
+						android:maxLength="4"/> 
+				<CheckBoxPreference
+                        android:title="@string/preferences_packs"
+                        android:defaultValue="false"
+                        android:key="prefUsingPacks"/> 
+                <CheckBoxPreference
+                        android:title="@string/preferences_vozvrat"
+                        android:defaultValue="false"
+                        android:key="prefUsingVozvrat"/>
+                <CheckBoxPreference
+                        android:title="@string/preferences_erarh"
+                        android:defaultValue="false"
+                        android:key="prefUsingErarh"/>
+                <CheckBoxPreference
+                        android:title="@string/preferences_modaluse"
+                        android:defaultValue="false"
+                        android:key="useModalCalc"/>
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/preferences_system">
+                <EditTextPreference
+                	android:title="@string/preferences_orderhyst"
+                	android:summary="@string/preferences_orderhyst_det"
+                	android:numeric="integer"
+                	android:defaultValue="30"
+                	android:maxLength="2"
+                	android:key="prefOrderHyst" />
+                <CheckBoxPreference
+                        android:title="@string/preferences_extfilename"
+                        android:defaultValue="false"
+                        android:key="prefExtendedFilename"/>
+        		<Preference
+                	android:title="@string/preferences_optimization"
+                	android:summary="@string/preferences_last_optimization"
+                	android:key="pushOptimization" />
+                <Preference
+                	android:title="@string/preferences_Info"
+                	android:summary="@string/preferences_Info_summary"
+                	android:key="pushInfo" />
+                <PreferenceScreen
+                	android:key="prefInOut"
+                	android:title="@string/preferences_inout_title"
+                	android:summary="@string/preferences_inout_usb">
+                	<PreferenceCategory
+                		android:title="@string/preferences_inout_operation">
+						<Preference
+                			android:title="@string/preferences_sdload"
+                			android:summary="@string/preferences_lastsd_dnld"
+                			android:key="pushSDLoad" />
+						<Preference
+							android:title="@string/preferences_sdload_no"
+							android:summary="@string/preferences_lastsd_dnld"
+							android:key="pushSDLoadNoUpdate" />
+                		<Preference
+                			android:title="@string/preferences_sdout"
+                			android:summary="@string/preferences_lastsd_out"
+                			android:key="pushSDOut" />  
+                		<Preference
+                			android:title="Выгрузить МБД на SDCard"
+                			android:summary="/sdcard/rsa/base"
+                			android:key="pushMBDOut" />               		
+                	</PreferenceCategory>
+                </PreferenceScreen>	
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/preferences_sync">
+                <ListPreference
+                        android:title="@string/preferences_ide"
+                        android:summary="@string/preferences_dbf"
+                        android:key="prefInterface"
+                        android:defaultValue="@string/preferences_dbf"
+                        android:entries="@array/prefInterface"
+                        android:entryValues="@array/prefInterface" />
+                <ListPreference
+                        android:title="@string/preferences_protocol"
+                        android:summary="@string/preferences_email"
+                        android:key="prefProtocol"
+                        android:defaultValue="@string/preferences_email"
+                        android:entries="@array/prefProtocol"
+                        android:entryValues="@array/prefProtocol" />
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="@string/preferences_monitoring">
+        	<PreferenceScreen
+                android:key="prefMonitoring"
+                android:title="@string/preferences_mon_param"
+                android:summary="@string/preferences_mon_details">
+        	  <PreferenceCategory
+            		android:title="@string/preferences_mon_password_auth">  
+        	    <EditTextPreference
+                	android:name="Monitor password"
+                	android:summary="@string/preferences_mon_password_summary"
+                	android:defaultValue=""
+                	android:title="@string/preferences_mon_password_title"
+                	android:key="prefMonPassword"/>
+        	  </PreferenceCategory>
+			  <PreferenceCategory
+            		android:title="@string/preferences_mon_title">
+            	<Preference
+                	android:name="MonitorSerial Preference"
+                	android:summary="@string/preferences_empty_serial"
+                	android:defaultValue=""
+                	android:title="@string/preferences_monitor_serial"
+                	android:key="prefMonitorSerial"/>
+				<CheckBoxPreference
+                        android:title="@string/preferences_gps"
+                        android:defaultValue="true"
+                        android:summary="@string/preferences_on"
+                        android:key="chkGPS" />
+				<EditTextPreference
+                	android:name="Refresh rate"
+                	android:summary=""
+                	android:defaultValue="20"
+                	android:title="@string/preferences_mon_rate"
+                	android:numeric="integer"
+    				android:maxLength="3"
+                	android:key="prefRate" />
+              </PreferenceCategory>
+              <PreferenceCategory
+            		android:title="@string/preferences_sendc_title">
+                <CheckBoxPreference
+                        android:title="@string/preferences_mon_coord"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_notactive"
+                        android:key="chkCoord" />
+                <EditTextPreference
+                	android:name="Send rate"
+                	android:summary="1600"
+                	android:defaultValue="1600"
+                	android:title="@string/preferences_mon_sendrate"
+                	android:numeric="integer"
+    				android:maxLength="5"
+                	android:key="prefSendRate" />
+                <EditTextPreference
+                	android:name="Host name"
+                	android:summary="8.8.8.8"
+                	android:defaultValue="8.8.8.8"
+                	android:title="@string/preferences_mon_host"
+                	android:key="prefHost"/>
+                <EditTextPreference
+                	android:name="Host port"
+                	android:summary="7777"
+                	android:defaultValue="7777"
+                	android:title="@string/preferences_mon_hostport"
+                	android:numeric="integer"
+    				android:maxLength="5"
+                	android:key="prefHostPort" />
+                <CheckBoxPreference
+                        android:title="@string/preferences_sundaywork"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_sundaywork_summary"
+                        android:key="chkSundayWork" />
+                <EditTextPreference
+                	android:name="Start Hour"
+                	android:summary="8"
+                	android:defaultValue="8"
+                	android:title="@string/preferences_mon_starthour"
+                	android:numeric="integer"
+    				android:maxLength="2"
+                	android:key="prefStartHour" />
+                <EditTextPreference
+                	android:name="End Hour"
+                	android:summary="19"
+                	android:defaultValue="19"
+                	android:title="@string/preferences_mon_endhour"
+                	android:numeric="integer"
+    				android:maxLength="2"
+                	android:key="prefEndHour" />
+                <CheckBoxPreference
+                        android:title="@string/preferences_mon_coordkonti"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_notactive"
+                        android:key="chkCoordKONTI" />
+                <CheckBoxPreference
+                        android:title="@string/preferences_mon_restsend"
+                        android:defaultValue="false"
+                        android:summary="@string/preferences_restsend"
+                        android:key="chkRestSend" />
+				<Preference
+                	android:title="@string/preferences_Coord"
+                	android:summary="@string/preferences_Coord_summary"
+                	android:key="pushCoord" />  
+              </PreferenceCategory>   
+              <PreferenceCategory
+            		android:title="@string/preferences_orders_autosend">
+					<CheckBoxPreference
+	                        android:title="@string/preferences_autosync_activate"
+	                        android:defaultValue="false"
+	                        android:summary=""
+	                        android:key="prefAutosync" />
+					<EditTextPreference
+	                	android:name="Autosync starts"
+	                	android:defaultValue="12"
+	                	android:title="@string/preferences_autosync_startAt"
+	                	android:numeric="integer"
+	    				android:maxLength="2"
+	                	android:key="prefAutosyncStartAt" />
+					<EditTextPreference
+	                	android:name="Autosync stops"
+	                	android:defaultValue="19"
+	                	android:title="@string/preferences_autosync_stopAt"
+	                	android:numeric="integer"
+	    				android:maxLength="2"
+	                	android:key="prefAutosyncStopAt" />
+					<EditTextPreference
+	                	android:name="Autosync interval"
+	                	android:defaultValue="60"
+	                	android:title="@string/preferences_autosync_interval"
+	                	android:numeric="integer"
+	    				android:maxLength="3"
+	                	android:key="prefAutosyncInterval" />
+                  
+			  </PreferenceCategory>           	
+        	</PreferenceScreen>
+    	</PreferenceCategory>
+</PreferenceScreen>

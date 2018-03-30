@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bground">
+
+    <RelativeLayout android:layout_width="fill_parent"
+     				android:layout_height="wrap_content">
+		<ImageView	android:id="@+id/about_panel"
+		    		android:layout_height="50dip"
+    				android:layout_width="fill_parent"
+    				android:src="@drawable/panel_upper" />
+		<Button android:id="@+id/about_pbtn_prev"
+		    android:layout_width="wrap_content"
+		    android:layout_height="35dip"
+		    android:background="@drawable/states_shapes"
+		    android:text="@string/about_toorders"
+		    android:textColor="#ffffff"
+		    android:textStyle="bold"
+		    android:layout_centerVertical="true"
+		    android:layout_alignLeft="@+id/about_panel"
+		    android:layout_marginLeft="7dip"
+		    android:layout_marginTop="1dip"/>
+     </RelativeLayout>
+     
+     <LinearLayout 	android:layout_width="fill_parent"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_margin="10dip">
+       <ImageView android:id="@+id/about_title_img"
+		    	  android:layout_height="wrap_content"
+    			  android:layout_width="wrap_content"
+    			  android:src="@drawable/title_about" />
+       
+       <LinearLayout android:layout_width="wrap_content"
+    				 android:layout_height="wrap_content"
+    				 android:orientation="vertical">
+    		<TextView   android:id="@+id/about_name"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_name"
+           				android:textColor="#ffffff"
+		    			android:textStyle="bold"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+    	    <TextView   android:id="@+id/about_ver"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_ver"
+           				android:textColor="#ffffff"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+    	    <TextView   android:id="@+id/about_site"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_www"
+           				android:textColor="#ffffff"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+       </LinearLayout>
+
+
+         
+     </LinearLayout>
+
+     <ScrollView
+         android:id="@+id/about_scroll"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:scrollHorizontally="false"
+         android:scrollbarAlwaysDrawVerticalTrack="true">
+
+         <LinearLayout
+             android:id="@+id/about_scroll_layout"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+    	    
+                <TextView android:id="@+id/about_license_topic1"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_topic1"
+           				android:textColor="#ffffff"
+           				android:textStyle="bold"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+                	<TextView android:id="@+id/about_topic1_detail"
+           					android:layout_width="wrap_content"
+           					android:layout_height="wrap_content"
+           					android:text="@string/about_topic1_det"
+           					android:textColor="#ffffff"
+           					android:textAppearance="?android:attr/textAppearanceSmall"
+           					android:layout_marginLeft="15dip"/>
+                <TextView android:id="@+id/about_license_topic2"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_topic2"
+           				android:textColor="#ffffff"
+           				android:textStyle="bold"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+                    <TextView android:id="@+id/about_topic2_detail"
+           					android:layout_width="wrap_content"
+           					android:layout_height="wrap_content"
+           					android:text="@string/about_topic2_det"
+           					android:textColor="#ffffff"
+           					android:textAppearance="?android:attr/textAppearanceSmall"
+           					android:layout_marginLeft="15dip"/>
+                <TextView android:id="@+id/about_license_topic3"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_topic3"
+           				android:textColor="#ffffff"
+           				android:textStyle="bold"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+                    <TextView android:id="@+id/about_topic3_detail"
+           					android:layout_width="wrap_content"
+           					android:layout_height="wrap_content"
+           					android:text="@string/about_topic3_det"
+           					android:textColor="#ffffff"
+           					android:textAppearance="?android:attr/textAppearanceSmall"
+           					android:layout_marginLeft="15dip"/>
+                <TextView android:id="@+id/about_license_topic4"
+           				android:layout_width="wrap_content"
+           				android:layout_height="wrap_content"
+           				android:text="@string/about_topic4"
+           				android:textColor="#ffffff"
+           				android:textStyle="bold"
+           				android:textAppearance="?android:attr/textAppearanceSmall"
+           				android:layout_marginLeft="10dip"/>
+                	<TextView android:id="@+id/about_topic4_detail"
+           					android:layout_width="wrap_content"
+           					android:layout_height="wrap_content"
+           					android:text="@string/about_topic4_det"
+           					android:textColor="#ffffff"
+           					android:textAppearance="?android:attr/textAppearanceSmall"
+           					android:layout_marginLeft="15dip"/>
+             
+         </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ru.by.rsa">
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-feature android:name="android.hardware.camera" />
+
+    <application 	android:icon="@drawable/icon"
+        			android:label="@string/app_name"
+        			android:name=".RsaApplication">
+
+        <!--uses-library android:name="com.google.android.maps"/-->
+		<uses-library android:name="com.google.android.maps"/>
+
+        <activity android:name=".RSAActivity"
+                  android:label="@string/list_order_title"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".CoordProvider"
+		    	  android:authorities="ru.by.rsa.CoordProvider">
+		</provider>
+		<receiver  android:process=":remote" android:name="Alarm"></receiver>
+		<receiver  android:process=":remote" android:name="AlarmAutoSync"></receiver>
+        <activity android:name=".NewHeadActivity"
+        		  android:label="@string/head_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+		<activity android:name=".DaysActivity"
+			android:label="@string/text_days_of_week"
+			android:screenOrientation="portrait">
+		</activity>
+        <activity android:name=".PlanActivity"
+        		  android:label="@string/plan_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SalesActivity"
+        		  android:label="@string/sales_title"
+        		  android:screenOrientation="portrait"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".LinesActivity"
+        		  android:label="@string/lines_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EkvatorLinesActivity"
+        		  android:label="@string/lines_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GroupActivity"
+        		  android:label="@string/group_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GroupErarhActivity"
+        		  android:label="@string/group_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GoodsActivity"
+        		  android:label="@string/goods_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ModalGoodsActivity"
+        		  android:label="@string/goods_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EkvatorGoodsActivity"
+        		  android:label="@string/goods_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MatrixGoodsActivity"
+        		  android:label="@string/goods_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Preferences"
+        		  android:label="@string/settings_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DebitActivity"
+        		  android:label="@string/debit_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+		<activity android:name=".ui.activity.AddDebitActivity"
+			android:label="@string/debit_title"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".DebitExtActivity"
+			android:label="@string/debit_title"
+			android:screenOrientation="portrait">
+		</activity>
+        <activity android:name=".KassaActivity"
+        		  android:label="@string/kassa_title"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SyncActivity"
+        		  android:label="@string/sync_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FtpSyncActivity"
+        		  android:label="@string/sync_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SendActivity"
+        		  android:label="@string/send_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FtpSendActivity"
+        		  android:label="@string/send_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DownloadActivity"
+        		  android:label="@string/download_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FtpDownloadActivity"
+        		  android:label="@string/download_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SyncparamActivity"
+        		  android:label="@string/sendprm_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FtpSyncparamActivity"
+        		  android:label="@string/sendprm_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.activity.AboutActivity"
+        		  android:label="@string/about_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ReportActivity"
+        		  android:label="@string/report_title"
+        		  android:configChanges="orientation"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ShowreportActivity"
+        		  android:label="@string/report_title"
+        		  android:configChanges="orientation"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".ShowmutualreportActivity"
+        		  android:label="@string/report_title"
+        		  android:configChanges="orientation"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".QuestActivity"
+        		  android:label="@string/report_title"
+        		  android:configChanges="orientation"
+                  android:windowSoftInputMode="stateHidden"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".GeophotoActivity"
+        		  android:label="@string/report_title"
+        		  android:screenOrientation="portrait"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".ShowDebtReportActivity"
+        		  android:label="@string/report_title"
+        		  android:screenOrientation="portrait"
+        		  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".PriceActivity"
+            	  android:screenOrientation="portrait"
+     			  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+		<activity android:name=".GroupActivityAvanta"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".ReportSalesPlanActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<service  android:name=".RsaGpsService"
+    			  android:enabled="true">
+		</service>
+		<receiver android:name=".RSABootReceiver"
+		    android:enabled="true"
+		    android:exported="false">
+           	<intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

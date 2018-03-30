@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"> 
+    		<LinearLayout 	android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+						    android:orientation="vertical"
+						    android:padding="3dip">
+				<LinearLayout 	android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+						    android:orientation="horizontal">
+					<Button
+	    			    android:id="@+id/btnSalesDateFrom"
+	    			    style="?android:attr/buttonStyleSmall"
+	    			    android:layout_width="fill_parent"
+	    			    android:layout_height="wrap_content"
+	    			    android:text="с 2015-10-01"
+	    			    android:layout_weight="1"/>
+	    			<Button
+	    			    android:id="@+id/btnSalesDateTo"
+	    			    style="?android:attr/buttonStyleSmall"
+	    			    android:layout_width="fill_parent"
+	    			    android:layout_height="wrap_content"
+	    			    android:text="по 2015-10-15"
+	    			    android:layout_weight="1" />    
+				    
+				</LinearLayout>
+				<LinearLayout 	android:layout_width="fill_parent"
+						    android:layout_height="wrap_content"
+						    android:orientation="horizontal">
+	    			<Button
+	    			    android:id="@+id/btnSalesCust"
+	    			    style="?android:attr/buttonStyleSmall"
+	    			    android:layout_width="fill_parent"
+	    			    android:layout_height="wrap_content"
+	    			    android:text="Парус ООО"
+	    			    android:layout_weight="1"/>
+	    			<Button
+	    			    android:id="@+id/btnSalesShop"
+	    			    style="?android:attr/buttonStyleSmall"
+	    			    android:layout_width="fill_parent"
+	    			    android:layout_height="wrap_content"
+	    			    android:text="ул. Шекспира, 13"
+	    			    android:layout_weight="1" />
+	    		</LinearLayout>
+    		    
+    		</LinearLayout>  
+        	<ExpandableListView
+				 android:id="@+id/salout_list"
+				 android:layout_height="match_parent"
+				 android:layout_width="match_parent">
+			</ExpandableListView>
+</LinearLayout>

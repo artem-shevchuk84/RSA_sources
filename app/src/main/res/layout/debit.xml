@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:background="@drawable/bground">
+     <RelativeLayout android:layout_width="fill_parent"
+     				android:layout_height="wrap_content">
+			<ImageView	android:id="@+id/debit_panel"
+			    		android:layout_height="50dip"
+	    				android:layout_width="fill_parent"
+	    				android:src="@drawable/panel_upper" />
+			<Button android:id="@+id/debit_pbtn_prev"
+			    android:layout_width="wrap_content"
+			    android:layout_height="35dip"
+			    android:background="@drawable/states_shapes"
+			    android:text="@string/about_toorders"
+			    android:textColor="#ffffff"
+			    android:textStyle="bold"
+			    android:layout_centerVertical="true"
+			    android:layout_alignLeft="@+id/debit_panel"
+			    android:layout_marginLeft="7dip"
+			    android:layout_marginTop="1dip"/>
+			<TextView android:id="@+id/debit_txtTotal"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="50dip"
+		    	android:text="Итого: 0.00/0.00"
+		    	android:textColor="#ffff00"
+		    	android:textStyle="bold"
+		    	android:layout_alignParentTop="true"
+		    	android:layout_alignParentRight="true"
+		    	android:layout_marginRight="3dip"
+		    	android:gravity="center"/>
+     </RelativeLayout>
+     
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content">   
+		     <RelativeLayout android:id="@+id/lntop_debit"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_marginLeft="2dp"
+			    android:layout_marginRight="2dp"
+			    android:layout_marginTop="3dp"
+    	        android:layout_alignParentTop="true">
+    			<Spinner android:layout_height="wrap_content"
+			      		  android:textSize="13sp"
+			      		  android:id="@+id/cmbDebit_debit" 
+			      		  android:layout_width="wrap_content" 
+			  			  android:completionThreshold="1"
+			      		  android:layout_centerHorizontal="true"
+			      		  android:singleLine="true"
+			    		  android:layout_alignParentLeft="true"
+			    		  android:layout_alignParentTop="true"
+			    		  android:layout_toLeftOf="@+id/lnCash_debit"/>
+    			<LinearLayout android:id="@+id/lnCash_debit"
+    			    		  android:layout_width="wrap_content"
+    	        			  android:layout_height="wrap_content"
+    	        			  android:layout_alignParentRight="true"
+    	        			  android:layout_alignParentTop="true"
+    	        			  android:orientation="vertical">
+    	        		<TextView 
+      		 					 android:layout_height="fill_parent"
+					      		 android:layout_width="fill_parent"
+					      		 android:text="ВНЕСЕНО"
+					      		 android:textColor="#ffff00"
+					      		 android:layout_gravity="center"
+					      		 android:gravity="center"
+					      		 android:textAppearance="?android:attr/textAppearanceSmall"/>	  
+    			    	<TextView android:id="@+id/txtCash_debit" 
+      		 					 android:layout_height="fill_parent"
+					      		 android:layout_width="fill_parent"
+					      		 android:text="1200.01"
+					      		 android:textColor="#ffff00"
+					      		 android:textStyle="bold"
+					      		 android:layout_gravity="center"
+					      		 android:gravity="center"
+					      		 android:textAppearance="?android:attr/textAppearanceSmall"/>
+    			</LinearLayout>	
+    	    </RelativeLayout>
+     
+     <ListView 	android:id="@+id/android:list" 
+         		android:layout_height="fill_parent" 
+     			android:layout_width="fill_parent"
+     			android:layout_below="@+id/lntop_debit"
+     			android:paddingLeft="2dip"
+     			android:paddingRight="2dip"
+     			android:paddingTop="2dip"
+    			android:cacheColorHint="@android:color/transparent"
+    			android:fastScrollEnabled="true"/>
+     
+     <LinearLayout android:id="@+id/android:empty" 
+         		   android:layout_width="fill_parent"
+     			   android:layout_height="wrap_content"
+     			   android:layout_below="@+id/lntop_debit"
+     			   android:cacheColorHint="@android:color/transparent">
+     	   <TextView android:id="@+id/txtEmpty_debit" 
+      		 android:layout_height="fill_parent"
+      		 android:layout_width="fill_parent"
+      		 android:layout_margin="15dp" 
+      		 android:layout_marginTop="10dp"
+      		 android:text="@string/debit_empty" 
+      		 android:layout_gravity="center"
+      		 android:gravity="center"
+      		 android:textAppearance="?android:attr/textAppearanceLarge"/>         
+     </LinearLayout>
+
+   </RelativeLayout>
+ </LinearLayout>

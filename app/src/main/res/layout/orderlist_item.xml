@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingTop="3dip">
+		<TextView
+		    android:id="@+id/orderlist_item1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:text="[date]"
+		    android:textStyle="bold"
+		    android:textColor="#000000"
+		    android:textSize="16sp"/>
+		<TextView
+		    android:id="@+id/orderlist_item2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:text="[sum]"
+		    android:textColor="#FF0000"
+		    android:textSize="16sp"/>
+	</RelativeLayout>
+	<LinearLayout 
+	    	android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:paddingTop="1dip"
+			android:paddingBottom="3dip">
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="№"
+		    android:textColor="#0000FF"
+		    android:textSize="16sp"/>
+	    <TextView
+		    android:id="@+id/orderlist_item3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="[num]"
+		    android:textColor="#0000FF"
+		    android:textSize="16sp"/>
+	</LinearLayout>
+</LinearLayout>
+			

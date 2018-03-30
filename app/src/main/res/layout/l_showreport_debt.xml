@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 	
+    	  android:layout_width="fill_parent"
+    	  android:layout_height="fill_parent"
+    	  android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/showreport_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+	
+     	<TextView android:id="@+id/txtD"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"			
+			    android:textColor="#000000"
+			    android:text="Документ:"
+			    android:layout_alignParentLeft="true"
+			    android:layout_toLeftOf="@+id/txtS"
+			    android:layout_marginLeft="3dip"
+			    android:layout_marginRight="3dip"
+			    android:textStyle="bold"/>
+     	<TextView android:id="@+id/txtS"
+			    android:layout_width="80dip"
+			    android:layout_height="wrap_content"			
+			    android:textColor="#000000"
+			    android:text="Отгрузка:"
+			    android:layout_toLeftOf="@+id/txtP"
+			    android:layout_marginLeft="3dip"
+			    android:layout_marginRight="3dip"
+			    android:textStyle="bold"/>
+     	<TextView android:id="@+id/txtP"
+			    android:layout_width="80dip"
+			    android:layout_height="wrap_content"			
+			    android:textColor="#000000"
+			    android:text="Оплата:"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginLeft="3dip"
+			    android:layout_marginRight="3dip"
+			    android:textStyle="bold"/>    
+    
+</RelativeLayout>
+    	  
+    <ListView android:id="@+id/showreport_list"
+        	android:layout_width="fill_parent"
+    	  	android:layout_height="fill_parent">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_alignParentTop="true"
+    	android:paddingTop="45dip"
+        android:orientation="vertical">
+    
+    	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content">   
+     
+     <ListView 	android:id="@+id/android:list" 
+         		android:layout_height="fill_parent" 
+     			android:layout_width="fill_parent"
+     			android:layout_alignParentTop="true"
+     			android:paddingTop="2dip"
+     			android:paddingLeft="2dip"
+     			android:paddingRight="2dip"
+     			android:fastScrollEnabled="true"
+    			android:cacheColorHint="@android:color/transparent"/>
+     
+     <LinearLayout android:id="@+id/android:empty" 
+         		   android:layout_width="fill_parent"
+     			   android:layout_height="wrap_content"
+     			   android:layout_alignParentTop="true"
+     			   android:cacheColorHint="@android:color/transparent">
+     	   <TextView android:id="@+id/txtEmpty_plan" 
+      		 android:layout_height="fill_parent"
+      		 android:layout_width="fill_parent"
+      		 android:layout_margin="15dp" 
+      		 android:layout_marginTop="10dp"
+      		 android:text="@string/plan_empty" 
+      		 android:layout_gravity="center"
+      		 android:gravity="center"
+      		 android:textAppearance="?android:attr/textAppearanceLarge"/>         
+     </LinearLayout>
+
+   </RelativeLayout>
+    	
+    </LinearLayout>
+    
+    <ImageView	android:id="@+id/plan_panel"
+		    	android:layout_height="43dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/blue_line"
+    			android:layout_alignParentTop="true"/>
+    
+    <TextView   android:id="@+id/plan_title"
+		    	android:layout_height="43dip"
+    			android:layout_width="wrap_content"
+    			android:layout_alignParentTop="true" 
+    			android:layout_toRightOf="@+id/plan_pbtn_prev"
+    			android:layout_alignParentRight="true"
+    			android:text="Понедельник, 28 Января"
+    			android:textColor="#ffffff"
+    			android:gravity="center"
+    			android:textSize="14sp"
+    			android:textStyle="bold"/>
+    
+    <ImageView	android:id="@+id/blackBorder"
+		    	android:layout_height="1px"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/black_border"
+				android:layout_below="@+id/plan_panel"/>
+    
+    <ImageView	android:id="@+id/dropShadow"
+		    	android:layout_height="3dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/shadow"
+    			android:layout_below="@+id/blackBorder"/>
+    
+    <Button	    android:id="@+id/plan_pbtn_prev"
+		    	android:layout_height="43dip"
+    			android:layout_width="43dip"
+    			android:background="@drawable/states_btn_back"
+    			android:layout_alignParentTop="true"
+    			android:layout_alignParentLeft="true"/>
+    
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:background="#50ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="43dip"/>
+    
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_alignParentTop="true"
+    	android:paddingTop="40dip"
+        android:orientation="vertical">
+    
+    	<com.google.android.maps.MapView
+		    	xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:id="@+id/map_map"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="fill_parent"
+		    	android:clickable="true"
+		    	android:apiKey="02xVHxWsaeGBTHgEq96x262CuFijGvHWbzXCBEw"/>
+    	
+    </LinearLayout>
+    
+    <ImageView	android:id="@+id/map_panel"
+		    	android:layout_height="43dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/blue_line"
+    			android:layout_alignParentTop="true"/>
+    
+    <TextView   android:id="@+id/map_date"
+		    	android:layout_height="43dip"
+    			android:layout_width="wrap_content"
+    			android:layout_alignParentTop="true" 
+    			android:layout_toLeftOf="@+id/map_pbtn_next"
+    			android:layout_toRightOf="@+id/map_pbtn_prev"
+    			android:text="10.07.2012"
+    			android:textColor="#ffffff"
+    			android:gravity="center"
+    			android:textSize="14sp"/>
+    
+    <ImageView	android:id="@+id/blackBorder"
+		    	android:layout_height="1px"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/black_border"
+				android:layout_below="@+id/map_panel"/>
+    
+    <ImageView	android:id="@+id/dropShadow"
+		    	android:layout_height="3dip"
+    			android:layout_width="fill_parent"
+    			android:src="@drawable/shadow"
+    			android:layout_below="@+id/blackBorder"/>
+    
+    <Button	    android:id="@+id/map_pbtn_next"
+		    	android:layout_height="43dip"
+    			android:layout_width="43dip"
+    			android:background="@drawable/states_btn_date"
+    			android:layout_alignParentTop="true"
+    			android:layout_alignParentRight="true"/>
+    
+    <Button	    android:id="@+id/map_pbtn_prev"
+		    	android:layout_height="43dip"
+    			android:layout_width="43dip"
+    			android:background="@drawable/states_btn_back"
+    			android:layout_alignParentTop="true"
+    			android:layout_alignParentLeft="true"/>
+    
+    
+    
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:background="#50ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dip"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="43dip"
+        android:background="#50ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="43dip"/>
+    
+</RelativeLayout>

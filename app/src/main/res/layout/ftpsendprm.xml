@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+      android:scrollHorizontally="false"
+      android:scrollbarAlwaysDrawVerticalTrack="true"> 
+	<LinearLayout android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="5dip">      
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sendprm_prm"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+      
+    <EditText
+        android:id="@+id/edtLogin_ftpSendprm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Логин (Имя пользователя)"
+        android:layout_marginTop="5dip">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtPass_ftpSendprm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:hint="Пароль"/>
+	<LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:weightSum="1.0">
+    	<EditText
+        	android:id="@+id/edtServer_ftpSendprm"
+        	android:layout_height="wrap_content" 
+        	android:layout_width="fill_parent"
+        	android:singleLine="true"
+        	android:hint="Сервер FTP"
+        	android:layout_weight=".30"/>
+    	<EditText
+        	android:id="@+id/edtPort_ftpSendprm"
+        	android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:singleLine="true" 
+        	android:inputType="number"
+        	android:maxLength="5" 
+        	android:hint="Порт"
+        	android:layout_weight=".70"/>
+    </LinearLayout>
+    	<EditText
+        	android:id="@+id/edtInbox_ftpSendprm"
+        	android:layout_height="wrap_content" 
+        	android:layout_width="fill_parent"
+        	android:singleLine="true" 
+        	android:hint="/obmen/tp002/inbox"
+        	android:layout_weight=".30"/>
+    <EditText
+        android:id="@+id/edtOutbox_ftpSendprm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="/obmen/tp002/outbox"/>
+
+    <Button
+        android:id="@+id/btnApply_ftpSendprm"
+        android:layout_height="43dip"
+        android:layout_width="fill_parent"
+        android:text="@string/sendprm_apply"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="1dip"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/states_btn_cancel"/>
+  </LinearLayout>
+</ScrollView>
+

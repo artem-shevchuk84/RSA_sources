@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dlg_goods"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+    <TextView android:text="@string/lines_dlg_name" 
+    		android:id="@+id/txtName_dlgGoods" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:textSize="13sp"
+    		android:textColor="#FFFF00"    		 
+    		android:textStyle="bold"/>
+	  <LinearLayout android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    	<LinearLayout android:orientation="vertical"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content">	
+    	  <TextView android:text="@string/lines_dlg_code" 
+    	  	android:textSize="12sp"
+    	  	android:maxLength="13"
+    		android:id="@+id/txtId_dlgGoods" 
+    		android:textColor="#FFFFFF"
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>    
+    	  <TextView android:text="@string/lines_dlg_price"
+    	  	android:textSize="12sp" 
+    		android:id="@+id/txtPrice_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>   
+    	  <TextView android:text="@string/lines_dlg_weight"
+    	  	android:textSize="12sp" 
+    		android:id="@+id/txtWeight_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>    
+    	  <TextView android:text="@string/lines_dlg_rest" 
+    	  	android:textSize="12sp"
+    		android:id="@+id/txtRest_dlgGoods"
+    		android:textColor="#FFFFFF" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>
+    	  
+    	  <TextView android:text="СТОП ЦЕНА"
+    	  	android:textSize="12sp" 
+    		android:textColor="#FF0000" 
+    		android:layout_width="fill_parent" 
+    		android:textStyle="bold"
+    		android:layout_marginTop="25dip"
+    		android:gravity="center"
+    		android:layout_height="wrap_content"/>
+    	  <TextView android:id="@+id/txtStopPrice_dlgGoods" 
+    	    android:text="354.24"
+    	  	android:textSize="12sp" 
+    		android:textColor="#FF0000" 
+    		android:layout_width="fill_parent" 
+    		android:textStyle="bold"
+    		android:layout_marginTop="1dip"
+    		android:gravity="center"
+    		android:layout_height="wrap_content"/>
+    	 </LinearLayout>
+    	 <LinearLayout android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_gravity="center"
+    		android:layout_marginLeft="5dp"> 
+    		
+  
+		
+       	 
+	    	      <RelativeLayout android:layout_width="fill_parent"
+	    	          			android:layout_height="wrap_content">
+       	 				<LinearLayout  android:id="@+id/lnrContent_dlgGoods"
+       	 				    			android:layout_width="wrap_content"
+	    	          				   android:layout_height="wrap_content"
+	    	          				   android:layout_alignParentLeft="true"
+							    	   android:layout_alignParentTop="true"
+							    	   android:layout_toLeftOf="@+id/lnr_pack"
+	    	          				   android:orientation="vertical">
+	    	          		<LinearLayout android:layout_width="wrap_content"
+				    				android:layout_height="wrap_content"
+				    				android:orientation="horizontal"
+				    				android:layout_gravity="center">
+							       	 <TextView
+							           android:id="@+id/txtCount_dlgGoods"
+							           android:layout_width="wrap_content"
+							           android:layout_height="wrap_content"
+							           android:text="@string/lines_dlg_number"
+							           android:textColor="#FFFF00"
+							           android:textSize="13sp"
+							           android:textStyle="bold"
+							           android:layout_gravity="center" />
+							       	 <TextView android:text="@string/lines_dlg_pcs"    			 
+							   				android:layout_width="fill_parent" 
+							   				android:layout_height="wrap_content"
+							   				android:textColor="#FFFF00"
+							    			android:textStyle="bold"
+							    			android:textSize="13sp"/>
+       	 					</LinearLayout>
+			    	        <EditText
+					    	      android:text="0"
+					    	      android:maxLines="1"
+					    	      android:maxLength="6"
+					    	      android:id="@+id/edtQty"
+					    	      android:layout_width="fill_parent"
+					    	      android:layout_height="wrap_content"
+					    	      android:numeric="integer"
+					    	      android:inputType="number"/>
+			    	         <TextView
+						           android:layout_width="wrap_content"
+						           android:layout_height="wrap_content"
+						           android:text="Цена"
+						           android:textColor="#FFFF00"
+						           android:textSize="13sp"
+						           android:textStyle="bold"
+						           android:layout_gravity="center" />
+			    	         <EditText
+					    	      android:text="0"
+					    	      android:maxLines="1"
+					    	      android:maxLength="7"
+					    	      android:id="@+id/edtCustomPrice"
+					    	      android:layout_width="fill_parent"
+					    	      android:layout_height="wrap_content"
+					    	      android:numeric="integer"
+					    	      android:inputType="numberDecimal"/>
+			    	         
+			    	         <LinearLayout android:layout_width="wrap_content"
+				    				android:layout_height="wrap_content"
+				    				android:orientation="horizontal"
+				    				android:layout_gravity="center">
+						    	  	  <TextView android:text="@string/lines_dlg_total" 
+						    			android:id="@+id/txtTotal_dlgGoods" 
+						   				android:layout_width="fill_parent" 
+						   				android:layout_height="wrap_content"
+						   				android:textColor="#FFFF00"
+						    			android:textStyle="bold"
+						    			android:textSize="13sp"/>	    
+						   		      <TextView android:id="@+id/txtCurrency_dlgGoods"
+						   		          android:text="@string/lines_dlg_curency"    			 
+						   				android:layout_width="fill_parent" 
+						   				android:layout_height="wrap_content"
+						   				android:textColor="#FFFF00"
+						    			android:textStyle="bold"
+						    			android:textSize="13sp"/>
+   							</LinearLayout>
+			    	         
+			    	         
+		    	         </LinearLayout>
+		    	         <LinearLayout android:id="@+id/lnr_pack"
+		    	             		   android:layout_width="wrap_content"
+		    	             		   android:layout_height="wrap_content"
+	    	          				   android:layout_alignParentRight="true"
+	    	          				   android:layout_alignParentTop="true"
+	    	          				   android:layout_alignBottom="@+id/lnrContent_dlgGoods"
+	    	          				   android:paddingLeft="4dip"
+	    	          				   android:orientation="vertical"
+	    	          				   android:gravity="center">
+			    	        
+			    	         <CheckBox
+							        android:id="@+id/chkPack"
+							        android:text="УП"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:checked="false"
+							        android:textColor="#FFFF00"
+					    			android:textStyle="bold"
+					    			android:textSize="12sp"/>
+		    	         </LinearLayout>
+	    	      </RelativeLayout>
+    	  			  
+    	 </LinearLayout>
+    	 
+    	</LinearLayout>
+    	
+
+</LinearLayout>

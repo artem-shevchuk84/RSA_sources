@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/geophoto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Торговая точка:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center" 
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:textStyle="bold"/>
+    <LinearLayout android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Контрагент:"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+	    <TextView android:id="@+id/txtGeophoto_cust"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Пупкин ООО"
+	        android:paddingLeft="15dip"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Торговая точка:"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+	    <TextView android:id="@+id/txtGeophoto_shop"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ул. Колонтаевская"
+	        android:paddingLeft="15dip"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Координаты торговой точки:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:paddingTop="5dip"
+        android:paddingBottom="10dip" 
+        android:textStyle="bold"/>
+    <LinearLayout android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Текущие:"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+	    <TextView android:id="@+id/txtGeophoto_coords"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="5674930934 345838592"
+	        android:paddingLeft="15dip"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"
+	        android:textColor="#00ff00"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="10dip">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Статус:"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+	    <TextView android:id="@+id/txtGeophoto_coordstatus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Координаты в наличии в 1С"
+	        android:paddingLeft="15dip"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"
+	        android:textColor="#00ff00"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Определить координаты"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фотография торговой точки:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:paddingTop="10dip"
+        android:paddingBottom="5dip"
+        android:textStyle="bold"/>
+	 <LinearLayout android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="15dip">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Статус:"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"/>
+	    <TextView android:id="@+id/txtGeophoto_shopstatus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Фотография в наличии в 1С"
+	        android:paddingLeft="10dip"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:paddingTop="4dip"
+	        android:textColor="#00ff00"/>
+	    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:paddingTop="4dip"
+        android:text="Сделать фото ТТ" />
+   
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="5dip"
+		    android:layout_gravity="center">
+	    <Button
+	        	android:id="@+id/btnSaveExit"
+	        	android:layout_height="wrap_content"
+	        	android:layout_width="wrap_content"
+	        	android:text="Сохранить"
+	        	android:textSize="16dip"
+	        	android:textColor="#FFFFFF"
+	        	android:layout_marginTop="25dip"
+	        	android:paddingTop="10dip"
+	        	android:paddingBottom="10dip"
+	        	android:paddingLeft="10dip"
+	        	android:paddingRight="10dip"
+	        	android:background="@drawable/states_btn_remark"/>
+	    <Button
+	        	android:id="@+id/btnCancelExit"
+	        	android:layout_height="wrap_content"
+	        	android:layout_width="wrap_content"
+	        	android:text="Не сохранять"
+	        	android:textSize="16dip"
+	        	android:textColor="#FFFFFF"
+	        	android:layout_marginTop="25dip"
+	        	android:layout_marginLeft="50dip"
+	        	android:paddingTop="10dip"
+	        	android:paddingBottom="10dip"
+	        	android:paddingLeft="10dip"
+	        	android:paddingRight="10dip"
+	        	android:background="@drawable/states_btn_cancel" />
+    </LinearLayout>
+
+</LinearLayout>
