@@ -13,12 +13,12 @@
 
     <application 	android:icon="@drawable/icon"
         			android:label="@string/app_name"
-        			android:name=".RsaApplication">
+        			android:name="ua.rsa.gd.RsaApplication">
 
         <!--uses-library android:name="com.google.android.maps"/-->
 		<uses-library android:name="com.google.android.maps"/>
 
-        <activity android:name=".RSAActivity"
+        <activity android:name="ua.rsa.gd.RSAActivity"
                   android:label="@string/list_order_title"
                   android:screenOrientation="portrait">
             <intent-filter>
@@ -26,172 +26,172 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <provider android:name=".CoordProvider"
-		    	  android:authorities="ru.by.rsa.CoordProvider">
+        <provider android:name="ua.rsa.gd.CoordProvider"
+		    	  android:authorities="ua.rsa.gd.CoordProvider">
 		</provider>
-		<receiver  android:process=":remote" android:name="Alarm"></receiver>
-		<receiver  android:process=":remote" android:name="AlarmAutoSync"></receiver>
-        <activity android:name=".NewHeadActivity"
+		<receiver  android:process=":remote" android:name="ua.rsa.gd.Alarm"></receiver>
+		<receiver  android:process=":remote" android:name="ua.rsa.gd.AlarmAutoSync"></receiver>
+        <activity android:name="ua.rsa.gd.NewHeadActivity"
         		  android:label="@string/head_title"
         		  android:screenOrientation="portrait">
         </activity>
-		<activity android:name=".DaysActivity"
+		<activity android:name="ua.rsa.gd.DaysActivity"
 			android:label="@string/text_days_of_week"
 			android:screenOrientation="portrait">
 		</activity>
-        <activity android:name=".PlanActivity"
+        <activity android:name="ua.rsa.gd.PlanActivity"
         		  android:label="@string/plan_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SalesActivity"
+        <activity android:name="ua.rsa.gd.SalesActivity"
         		  android:label="@string/sales_title"
         		  android:screenOrientation="portrait"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".LinesActivity"
+        <activity android:name="ua.rsa.gd.LinesActivity"
         		  android:label="@string/lines_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".EkvatorLinesActivity"
+        <activity android:name="ua.rsa.gd.EkvatorLinesActivity"
         		  android:label="@string/lines_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GroupActivity"
+        <activity android:name="ua.rsa.gd.GroupActivity"
         		  android:label="@string/group_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GroupErarhActivity"
+        <activity android:name="ua.rsa.gd.GroupErarhActivity"
         		  android:label="@string/group_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GoodsActivity"
+        <activity android:name="ua.rsa.gd.GoodsActivity"
         		  android:label="@string/goods_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ModalGoodsActivity"
+        <activity android:name="ua.rsa.gd.ModalGoodsActivity"
         		  android:label="@string/goods_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".EkvatorGoodsActivity"
+        <activity android:name="ua.rsa.gd.EkvatorGoodsActivity"
         		  android:label="@string/goods_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MatrixGoodsActivity"
+        <activity android:name="ua.rsa.gd.MatrixGoodsActivity"
         		  android:label="@string/goods_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Preferences"
+        <activity android:name="ua.rsa.gd.Preferences"
         		  android:label="@string/settings_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".DebitActivity"
+        <activity android:name="ua.rsa.gd.DebitActivity"
         		  android:label="@string/debit_title"
         		  android:screenOrientation="portrait">
         </activity>
-		<activity android:name=".ui.activity.AddDebitActivity"
+		<activity android:name="ua.rsa.gd.activity.AddDebitActivity"
 			android:label="@string/debit_title"
 			android:screenOrientation="portrait">
 		</activity>
-		<activity android:name=".DebitExtActivity"
+		<activity android:name="ua.rsa.gd.DebitExtActivity"
 			android:label="@string/debit_title"
 			android:screenOrientation="portrait">
 		</activity>
-        <activity android:name=".KassaActivity"
+        <activity android:name="ua.rsa.gd.KassaActivity"
         		  android:label="@string/kassa_title"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SyncActivity"
+        <activity android:name="ua.rsa.gd.SyncActivity"
         		  android:label="@string/sync_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FtpSyncActivity"
+        <activity android:name="ua.rsa.gd.FtpSyncActivity"
         		  android:label="@string/sync_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SendActivity"
+        <activity android:name="ua.rsa.gd.SendActivity"
         		  android:label="@string/send_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FtpSendActivity"
+        <activity android:name="ua.rsa.gd.FtpSendActivity"
         		  android:label="@string/send_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".DownloadActivity"
+        <activity android:name="ua.rsa.gd.DownloadActivity"
         		  android:label="@string/download_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FtpDownloadActivity"
+        <activity android:name="ua.rsa.gd.FtpDownloadActivity"
         		  android:label="@string/download_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SyncparamActivity"
+        <activity android:name="ua.rsa.gd.SyncparamActivity"
         		  android:label="@string/sendprm_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FtpSyncparamActivity"
+        <activity android:name="ua.rsa.gd.FtpSyncparamActivity"
         		  android:label="@string/sendprm_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.activity.AboutActivity"
+        <activity android:name="ua.rsa.gd.activity.AboutActivity"
         		  android:label="@string/about_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ReportActivity"
+        <activity android:name="ua.rsa.gd.ReportActivity"
         		  android:label="@string/report_title"
         		  android:configChanges="orientation"
         		  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ShowreportActivity"
+        <activity android:name="ua.rsa.gd.ShowreportActivity"
         		  android:label="@string/report_title"
         		  android:configChanges="orientation"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".ShowmutualreportActivity"
+        <activity android:name="ua.rsa.gd.ShowmutualreportActivity"
         		  android:label="@string/report_title"
         		  android:configChanges="orientation"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".QuestActivity"
+        <activity android:name="ua.rsa.gd.QuestActivity"
         		  android:label="@string/report_title"
         		  android:configChanges="orientation"
                   android:windowSoftInputMode="stateHidden"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".GeophotoActivity"
+        <activity android:name="ua.rsa.gd.GeophotoActivity"
         		  android:label="@string/report_title"
         		  android:screenOrientation="portrait"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".ShowDebtReportActivity"
+        <activity android:name="ua.rsa.gd.ShowDebtReportActivity"
         		  android:label="@string/report_title"
         		  android:screenOrientation="portrait"
         		  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".PriceActivity"
+        <activity android:name="ua.rsa.gd.PriceActivity"
             	  android:screenOrientation="portrait"
      			  android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-		<activity android:name=".GroupActivityAvanta"
+		<activity android:name="ua.rsa.gd.GroupActivityAvanta"
 			android:screenOrientation="portrait"
 			android:theme="@android:style/Theme.NoTitleBar">
 		</activity>
-		<activity android:name=".ReportSalesPlanActivity"
+		<activity android:name="ua.rsa.gd.ReportSalesPlanActivity"
 			android:screenOrientation="portrait"
 			android:theme="@android:style/Theme.NoTitleBar">
 		</activity>
-		<service  android:name=".RsaGpsService"
+		<service  android:name="ua.rsa.gd.RsaGpsService"
     			  android:enabled="true">
 		</service>
-		<receiver android:name=".RSABootReceiver"
+		<receiver android:name="ua.rsa.gd.RSABootReceiver"
 		    android:enabled="true"
 		    android:exported="false">
            	<intent-filter>

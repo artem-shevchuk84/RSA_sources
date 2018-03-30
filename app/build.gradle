@@ -5,11 +5,11 @@ android {
     useLibrary  'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "ru.by.rsa"
+        applicationId "ua.rsa.gd"
         minSdkVersion 9
         targetSdkVersion 17
-        versionCode 200
-        versionName '3.25'
+        versionCode 1
+        versionName '1.0'
         javaCompileOptions {
             annotationProcessorOptions {
                 includeCompileClasspath true
