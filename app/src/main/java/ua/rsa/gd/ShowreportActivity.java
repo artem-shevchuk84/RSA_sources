@@ -10,7 +10,7 @@ import android.util.Log;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 public class ShowreportActivity extends Activity {
 

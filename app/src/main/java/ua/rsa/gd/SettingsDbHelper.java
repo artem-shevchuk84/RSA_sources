@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Class with database architecture, used

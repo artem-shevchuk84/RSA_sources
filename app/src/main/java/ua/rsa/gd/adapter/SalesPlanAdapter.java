@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import java.util.List;
 import java.util.Locale;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.viewholders.SalesPlanViewHolder;
 import ua.rsa.gd.models.SalesPlanModel;
 

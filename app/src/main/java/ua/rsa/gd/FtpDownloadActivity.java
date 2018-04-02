@@ -18,7 +18,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.external.javadbf.JDBFException;
 import ua.rsa.gd.org.apache.commons.net.ftp.FTP;
 import ua.rsa.gd.org.apache.commons.net.ftp.FTPClient;

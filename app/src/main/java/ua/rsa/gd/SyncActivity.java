@@ -9,7 +9,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Allows user to do synchronization with server

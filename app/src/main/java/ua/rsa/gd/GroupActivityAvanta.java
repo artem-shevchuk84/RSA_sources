@@ -32,7 +32,7 @@ import butterknife.OnClick;
 import ua.rsa.gd.AvantaErarh.Item;
 import ua.rsa.gd.AvantaErarh.ListAdapter;
 import ua.rsa.gd.AvantaErarh.ListItem;
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.utils.DeviceUtils;
 
 public class GroupActivityAvanta extends Activity implements ListAdapter.OnProductClickListener {

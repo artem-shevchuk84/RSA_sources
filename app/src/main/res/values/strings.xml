@@ -10,7 +10,7 @@
   <color name="unpressed">#f4f4f4</color>
   <color name="unpressed2">#05b2c0</color>
     
-  <string name="list_order_title">Remote Sales Agent</string>
+  <string name="list_order_title">GD RSA</string>
     <string name="list_order_date">[Дата]</string>
     <string name="list_order_time">[Время]</string>
     <string name="list_order_sum">[Сумма]</string>
@@ -179,9 +179,8 @@
   	
   <string name="about_title">О ПРОГРАММЕ</string>
   	<string name="about_toorders">К заказам</string>
-  	<string name="about_name">\u00A9 2016 Remote Sales Agent</string>
-  	<string name="about_ver">Ver. 3.25 ShareWare (29.09.2017)</string>
-  	<string name="about_www">http://www.rslab.com.ua/</string>
+  	<string name="about_name">\u00A9 2018 GD RSA</string>
+  	<string name="about_ver">Ver. 1.0 (02.04.2018)</string>
   	<string name="about_topic1">1. ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ.</string>
   		<string name="about_topic1_det">Эта программа защищена национальными законами и международными соглашениями об авторском праве. Исключительные права на использование этой программы принадлежат ее автору. 
 										Программой и ее компонентами можно пользоваться бесплатно:\n

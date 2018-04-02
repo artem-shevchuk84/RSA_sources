@@ -20,7 +20,7 @@ import java.util.Locale;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.DaysAdapter;
 import ua.rsa.gd.models.DayModel;
 

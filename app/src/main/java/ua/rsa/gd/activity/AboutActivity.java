@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.RsaDb;
 
 /**

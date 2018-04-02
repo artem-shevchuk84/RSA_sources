@@ -58,7 +58,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.activity.AboutActivity;
 import ua.rsa.gd.utils.GpsUtils;
 
@@ -710,7 +710,7 @@ public class RSAActivity extends ListActivity
 			db_orders = mDb.getWritableDatabase();
 
 			try {
-				int delta_days = prefs.getInt("ru.by.rsa.resend_monitor", 0);
+				int delta_days = prefs.getInt("ua.rsa.gd.resend_monitor", 0);
 
 				if (delta_days>0) {
 					Calendar c = Calendar.getInstance();
@@ -721,23 +721,23 @@ public class RSAActivity extends ListActivity
 
 			    	db_orders.execSQL("update _head set MONITORED=0 where SDATE between '"+begin_date+"' AND '"+current_date+"'");
 			    	Toast.makeText(getApplicationContext(),"Обнулили мониторинг с "+begin_date,Toast.LENGTH_LONG).show();
-			    	prefs.edit().putInt("ru.by.rsa.resend_monitor", 0).commit();
+			    	prefs.edit().putInt("ua.rsa.gd.resend_monitor", 0).commit();
 				}
 
 
-				//if (prefs.getBoolean("ru.by.rsa.runonce_eleven", false)==false) {
+				//if (prefs.getBoolean("ua.rsa.gd.runonce_eleven", false)==false) {
 				//		db_orders.execSQL("update _head set MONITORED=0 where SDATE between '2014-01-13' AND '2014-01-17'");
-				//		prefs.edit().putBoolean("ru.by.rsa.runonce_eleven", true).commit();
+				//		prefs.edit().putBoolean("ua.rsa.gd.runonce_eleven", true).commit();
 				//}
-				//if (prefs.getBoolean("ru.by.rsa.runonce_six", false)==false && prefs.getBoolean(RsaDb.SENDLINES, false)==true) {
+				//if (prefs.getBoolean("ua.rsa.gd.runonce_six", false)==false && prefs.getBoolean(RsaDb.SENDLINES, false)==true) {
 				//	db_orders.execSQL("update _head set MONITORED=1 where SDATE between '2013-11-01' AND '2013-12-10'");
 				//	db_orders.execSQL("update _head set MONITORED=0 where SDATE between '2013-12-11' AND '2013-12-13'");
-				//	prefs.edit().putBoolean("ru.by.rsa.runonce_six", true).commit();
+				//	prefs.edit().putBoolean("ua.rsa.gd.runonce_six", true).commit();
 				//}
-				//	if (prefs.getBoolean("ru.by.rsa.runonce_nine", false)==false && prefs.getBoolean(RsaDb.SENDLINES, false)==true) {
+				//	if (prefs.getBoolean("ua.rsa.gd.runonce_nine", false)==false && prefs.getBoolean(RsaDb.SENDLINES, false)==true) {
 				//		db_orders.execSQL("update _head set MONITORED=1 where SDATE between '2013-12-01' AND '2013-12-15'");
 				//		//db_orders.execSQL("update _head set MONITORED=0 where SDATE between '2013-12-01' AND '2013-12-11'");
-				//		prefs.edit().putBoolean("ru.by.rsa.runonce_nine", true).commit();
+				//		prefs.edit().putBoolean("ua.rsa.gd.runonce_nine", true).commit();
 				//		Toast.makeText(getApplicationContext(),"Пометили ВСЕ",Toast.LENGTH_LONG).show();
 				//	}
 			} catch (Exception e) {}

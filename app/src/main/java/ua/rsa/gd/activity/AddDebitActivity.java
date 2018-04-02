@@ -26,7 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.RsaDb;
 import ua.rsa.gd.RsaDbHelper;
 import ua.rsa.gd.adapter.item.ComboCustomerItem;

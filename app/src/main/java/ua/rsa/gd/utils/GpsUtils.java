@@ -16,7 +16,7 @@ import java.util.List;
 
 import ua.rsa.gd.CoordDbHelper;
 import ua.rsa.gd.CoordProvider;
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Created by Ромка on 16.04.2016.

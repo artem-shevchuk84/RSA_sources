@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.external.javadbf.JDBFException;
 import ua.rsa.gd.org.apache.commons.net.ftp.FTP;
 import ua.rsa.gd.org.apache.commons.net.ftp.FTPClient;

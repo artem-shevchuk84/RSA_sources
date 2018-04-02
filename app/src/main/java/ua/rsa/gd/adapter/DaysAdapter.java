@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.viewholders.DayViewHolder;
 import ua.rsa.gd.models.DayModel;
 

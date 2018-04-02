@@ -24,7 +24,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 public class QuestActivity extends Activity {
 

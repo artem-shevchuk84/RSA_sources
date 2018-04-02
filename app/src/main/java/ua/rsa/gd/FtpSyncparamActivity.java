@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Activity for setting up Email-transport parameters

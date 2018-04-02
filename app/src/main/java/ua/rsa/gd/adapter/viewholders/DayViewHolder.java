@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Created on 27.03.2016 by Roman Komarov (neo33da@gmail.com)

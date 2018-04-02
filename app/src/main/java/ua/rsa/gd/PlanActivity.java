@@ -26,7 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 public class PlanActivity extends ListActivity {
 	public static final String EXTRA_CALL_FROM_DAYS_ACTIVITY = "call_from_days";

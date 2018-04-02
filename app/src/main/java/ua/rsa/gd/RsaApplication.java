@@ -7,7 +7,7 @@ import android.util.Log;
 
 import com.facebook.stetho.Stetho;
 
-import ru.by.rsa.BuildConfig;
+import ua.rsa.gd.BuildConfig;
 
 public class RsaApplication extends Application {
 

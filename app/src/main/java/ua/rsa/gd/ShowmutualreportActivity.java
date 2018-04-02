@@ -16,7 +16,7 @@ import android.widget.SimpleAdapter;
 import android.widget.SimpleAdapter.ViewBinder;
 import android.widget.TextView;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 public class ShowmutualreportActivity extends Activity {
 

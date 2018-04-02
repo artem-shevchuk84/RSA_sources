@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.erarh.NLevelAdapter;
 import ua.rsa.gd.erarh.NLevelItem;
 import ua.rsa.gd.erarh.NLevelView;

@@ -42,7 +42,7 @@ import android.widget.Toast;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 import android.widget.TextView;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Activity that allows user view debit

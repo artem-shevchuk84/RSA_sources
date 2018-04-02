@@ -26,7 +26,7 @@ import android.widget.SimpleAdapter;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.Toast;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.item.ComboSkladItem;
 
 public class SalesActivity extends Activity {

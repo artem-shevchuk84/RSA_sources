@@ -22,7 +22,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.SalesPlanAdapter;
 import ua.rsa.gd.adapter.viewholders.SalesPlanViewHolder;
 import ua.rsa.gd.models.ItemModel;

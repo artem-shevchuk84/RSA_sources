@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Locale;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Created on 8/13/16 by Roman Komarov (0503412392)

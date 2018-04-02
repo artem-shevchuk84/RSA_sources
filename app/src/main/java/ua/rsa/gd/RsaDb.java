@@ -21,7 +21,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 import org.xmlpull.v1.XmlSerializer;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.external.javadbf.DBFReader;
 import ua.rsa.gd.external.javadbf.DBFWriter;
 import ua.rsa.gd.external.javadbf.JDBFException;
@@ -79,39 +79,39 @@ public class RsaDb
 	public static final int DBF_PLAN 	= 21;
 	public static final int DBF_PRODLOCK 	= 22;
 	public static final int DBF_SKLADDET 	= 24;
-	public static final String PREFS_NAME 		= "ru.by.rsa";
-	public static final String USESSL 			= "ru.by.rsa.usessl";
-	public static final String EMAILKEY 		= "ru.by.rsa.email";
-	public static final String PASSWORDKEY 		= "ru.by.rsa.password";
-	public static final String SMTPKEY 			= "ru.by.rsa.smtp";
-	public static final String SMTPPORTKEY		= "ru.by.rsa.smtpport";
-	public static final String POPKEY 			= "ru.by.rsa.pop";
-	public static final String POPPORTKEY		= "ru.by.rsa.popport";
-	public static final String SENDTOKEY		= "ru.by.rsa.sendto";
-	public static final String FTPSERVER 		= "ru.by.rsa.ftpserver";
-	public static final String FTPUSER	 		= "ru.by.rsa.ftpuser";
-	public static final String FTPPASSWORD 		= "ru.by.rsa.ftppassword";
-	public static final String FTPPORT	 		= "ru.by.rsa.ftpport";
-	public static final String FTPINBOX 		= "ru.by.rsa.ftpinbox";
-	public static final String FTPOUTBOX 		= "ru.by.rsa.ftpoutbox";
-	public static final String ACTUALDBKEY		= "ru.by.rsa.actualdb";
-	public static final String LASTDWNLDKEY		= "ru.by.rsa.lastdwnldkey";
-	public static final String FTPLASTDWNLDKEY	= "ru.by.rsa.ftplastdwnldkey";
-	public static final String LASTSENDKEY		= "ru.by.rsa.lastsendkey";
-	public static final String FTPLASTSENDKEY	= "ru.by.rsa.ftplastsendkey";
-	public static final String ACTIVESYNCKEY	= "ru.by.rsa.activesynckey";
-	public static final String LASTUPDATECHECK  = "ru.by.rsa.lastupdatecheck";
-	public static final String MARKETVERSION  	= "ru.by.rsa.marketversion";
-	public static final String PRICESELECTED  	= "ru.by.rsa.priceselected";
-	public static final String LASTCSVSENDDAY	= "ru.by.rsa.lastcsvsendday";
-	public static final String CSVPORTION		= "ru.by.rsa.csvportion";
-	public static final String BRANDGROUPSHOW	= "ru.by.rsa.brandgroupshow";
-	public static final String LICENSED			= "ru.by.rsa.licensed";
-	public static final String MAXPRICETYPE		= "ru.by.rsa.maxpricetype";
-	public static final String SENDLINES		= "ru.by.rsa.sendlines";
+	public static final String PREFS_NAME 		= "ua.rsa.gd";
+	public static final String USESSL 			= "ua.rsa.gd.usessl";
+	public static final String EMAILKEY 		= "ua.rsa.gd.email";
+	public static final String PASSWORDKEY 		= "ua.rsa.gd.password";
+	public static final String SMTPKEY 			= "ua.rsa.gd.smtp";
+	public static final String SMTPPORTKEY		= "ua.rsa.gd.smtpport";
+	public static final String POPKEY 			= "ua.rsa.gd.pop";
+	public static final String POPPORTKEY		= "ua.rsa.gd.popport";
+	public static final String SENDTOKEY		= "ua.rsa.gd.sendto";
+	public static final String FTPSERVER 		= "ua.rsa.gd.ftpserver";
+	public static final String FTPUSER	 		= "ua.rsa.gd.ftpuser";
+	public static final String FTPPASSWORD 		= "ua.rsa.gd.ftppassword";
+	public static final String FTPPORT	 		= "ua.rsa.gd.ftpport";
+	public static final String FTPINBOX 		= "ua.rsa.gd.ftpinbox";
+	public static final String FTPOUTBOX 		= "ua.rsa.gd.ftpoutbox";
+	public static final String ACTUALDBKEY		= "ua.rsa.gd.actualdb";
+	public static final String LASTDWNLDKEY		= "ua.rsa.gd.lastdwnldkey";
+	public static final String FTPLASTDWNLDKEY	= "ua.rsa.gd.ftplastdwnldkey";
+	public static final String LASTSENDKEY		= "ua.rsa.gd.lastsendkey";
+	public static final String FTPLASTSENDKEY	= "ua.rsa.gd.ftplastsendkey";
+	public static final String ACTIVESYNCKEY	= "ua.rsa.gd.activesynckey";
+	public static final String LASTUPDATECHECK  = "ua.rsa.gd.lastupdatecheck";
+	public static final String MARKETVERSION  	= "ua.rsa.gd.marketversion";
+	public static final String PRICESELECTED  	= "ua.rsa.gd.priceselected";
+	public static final String LASTCSVSENDDAY	= "ua.rsa.gd.lastcsvsendday";
+	public static final String CSVPORTION		= "ua.rsa.gd.csvportion";
+	public static final String BRANDGROUPSHOW	= "ua.rsa.gd.brandgroupshow";
+	public static final String LICENSED			= "ua.rsa.gd.licensed";
+	public static final String MAXPRICETYPE		= "ua.rsa.gd.maxpricetype";
+	public static final String SENDLINES		= "ua.rsa.gd.sendlines";
 
 	// Preferences screen
-	public static final String PREFS_NAME_MAIN	= "ru.by.rsa_preferences";
+	public static final String PREFS_NAME_MAIN	= "ua.rsa.gd_preferences";
 	public static final String NAMEKEY			= "prefName";
 	public static final String CODEKEY			= "prefCode";
 	public static final String IMEIKEY			= "prefSerial";
@@ -148,7 +148,7 @@ public class RsaDb
 	public static final String MATRIXKEY		= "prefUseMatrix";
 
 	// save instance preferences
-	public static final String PREFS_INSTANCE	= "ru.by.rsa_instance";
+	public static final String PREFS_INSTANCE	= "ua.rsa.gd_instance";
 
 	// default preferences
 	public static final String USEPACKS			= "prefUsingPacks";
@@ -526,7 +526,7 @@ public class RsaDb
 	 */
 	public static void fromLzma(Context context, String inputFile, String outputFile) throws Exception
 	{
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = context.getFilesDir().getAbsolutePath();
 
 		java.io.File inFile = new java.io.File(appPath + File.separator + inputFile);
@@ -567,7 +567,7 @@ public class RsaDb
 	 */
 	public static void fromZip(Context context, String inputFile, String outputLocation) throws IOException
 	{
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = context.getFilesDir().getAbsolutePath();
 		String zipFile = appPath + File.separator + inputFile;
 		String unzipLocation = appPath + File.separator + outputLocation + File.separator;
@@ -585,7 +585,7 @@ public class RsaDb
 	 */
 	public static void toZip(Context context, String inputFile, String outputFile, String optionalPath) throws IOException
 	{
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = context.getFilesDir().getAbsolutePath();
 		String zipName = appPath + File.separator + outputFile;
 		String[] files = new String[] { appPath + File.separator + inputFile };
@@ -599,7 +599,7 @@ public class RsaDb
 
 	public static void toZipArray(Context context, String inputDir, String outputFile) throws IOException
 	{
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = context.getFilesDir().getAbsolutePath();
 		String zipName = appPath + File.separator + outputFile;
 		File outFolder = new File(appPath + File.separator + inputDir);
@@ -651,7 +651,7 @@ public class RsaDb
 	 */
 	public static void toLzma(Context context, String inputFile, String outputFile) throws Exception
 	{
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = context.getFilesDir().getAbsolutePath();
 
 		java.io.File inFile = new java.io.File(appPath + File.separator + inputFile);
@@ -727,7 +727,7 @@ public class RsaDb
 	 */
 	public static void dbfToDb(Activity mAct, Context context, SQLiteDatabase db, String inputFile, int table, Handler mHandler, String fPath) throws JDBFException
 	{
-		/** appPath = /data/data/ru.by.rsa/files */
+		/** appPath = /data/data/ua.rsa.gd/files */
 		String appPath = fPath;
 
 		/** DBF file stream storage */
@@ -1355,7 +1355,7 @@ public class RsaDb
 					try {
 						int delta = Integer.parseInt(rowObjects[1].toString());
 						if (delta>0) {
-							prefs.edit().putInt("ru.by.rsa.resend_monitor", delta).commit();
+							prefs.edit().putInt("ua.rsa.gd.resend_monitor", delta).commit();
 						}
 					} catch (Exception ee) {}
 
@@ -1497,7 +1497,7 @@ public class RsaDb
 		String[] mContentRests = {"_id",	RsaDbHelper.RESTS_ID, RsaDbHelper.RESTS_ZAKAZ_ID, RsaDbHelper.RESTS_GOODS_ID,
 											RsaDbHelper.RESTS_RESTQTY, RsaDbHelper.RESTS_RECQTY, RsaDbHelper.RESTS_QTY };
 
-		/** appPath = /data/data/ru.by.rsa/files */
+		/** appPath = /data/data/ua.rsa.gd/files */
 		String appPath = fPath;
 
 		/** Storage for fields name in Head.dbf table */
@@ -2165,7 +2165,7 @@ public class RsaDb
 		String[] mContentRests = {"_id",	RsaDbHelper.RESTS_ID, 		RsaDbHelper.RESTS_ZAKAZ_ID, RsaDbHelper.RESTS_GOODS_ID,
 											RsaDbHelper.RESTS_RESTQTY, 	RsaDbHelper.RESTS_RECQTY, 	RsaDbHelper.RESTS_QTY };
 
-		/** appPath = /data/data/ru.by.rsa/files/ */
+		/** appPath = /data/data/ua.rsa.gd/files/ */
 		String appPath = fPath + File.separator;
 
 		SharedPreferences def_prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -3024,7 +3024,7 @@ public class RsaDb
 	public static void CSVtoCust(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "cust.csv");
 		// init file to stream
@@ -3079,7 +3079,7 @@ public class RsaDb
 	public static void CSVtoBrand(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "brand.csv");
 		// init file to stream
@@ -3128,7 +3128,7 @@ public class RsaDb
 	public static void CSVtoGroup(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "group.csv");
 		// init file to stream
@@ -3177,7 +3177,7 @@ public class RsaDb
 	public static void CSVtoSklad(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "sklad.csv");
 		// init file to stream
@@ -3226,7 +3226,7 @@ public class RsaDb
 	public static void CSVtoShop(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "shop.csv");
 		// init file to stream
@@ -3277,7 +3277,7 @@ public class RsaDb
 	public static void CSVtoDebit(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "debit.csv");
 		// init file to stream
@@ -3332,7 +3332,7 @@ public class RsaDb
 	public static void CSVtoChar(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "char.csv");
 		// init file to stream
@@ -3385,7 +3385,7 @@ public class RsaDb
 	public static void CSVtoPlan(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "plan.csv");
 		// init file to stream
@@ -3439,7 +3439,7 @@ public class RsaDb
 	public static void CSVtoGoods(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "goods.csv");
 		// init file to stream
@@ -3533,7 +3533,7 @@ public class RsaDb
 	public static void CSVtoFTP(Context context, SQLiteDatabase db, Handler mHandler, String fPath) throws Exception {
 		ContentValues values = new ContentValues();
 		Bundle data = new Bundle();
-		// appPath = /data/data/ru.by.rsa/files
+		// appPath = /data/data/ua.rsa.gd/files
 		String appPath = fPath + File.separator + "inbox/";
 		File csvFile = new File(appPath + "workinf.csv");
 		// parse for elements count
@@ -3591,7 +3591,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "cust.xml");
@@ -3660,7 +3660,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "brand.xml");
@@ -3732,7 +3732,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "group.xml");
@@ -3810,7 +3810,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "sklad.xml");
@@ -3866,7 +3866,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "skladdet.xml");
@@ -3928,7 +3928,7 @@ public class RsaDb
 		XmlPullParser parser = factory.newPullParser();
 		Bundle data = new Bundle();
 
-		/** appPath = /data/data/ru.by.rsa/files */
+		/** appPath = /data/data/ua.rsa.gd/files */
 		String appPath = fPath + File.separator + "inbox/";
 
 		File xmlFile = new File(appPath + "statplan.xml");
@@ -4007,7 +4007,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "shop.xml");
@@ -4088,7 +4088,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "debit.xml");
@@ -4163,7 +4163,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "char.xml");
@@ -4223,7 +4223,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "hist.xml");
@@ -4290,7 +4290,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "salout.xml");
@@ -4379,7 +4379,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "plan.xml");
@@ -4440,7 +4440,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "sold.xml");
@@ -4501,7 +4501,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "matrix.xml");
@@ -4623,7 +4623,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "prodlock.xml");
@@ -4686,7 +4686,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "workinf.xml");
@@ -4739,7 +4739,7 @@ public class RsaDb
 					try {
 						int delta = Integer.parseInt(parser.getAttributeValue(1));
 						if (delta > 0) {
-							prefs.edit().putInt("ru.by.rsa.resend_monitor", delta).commit();
+							prefs.edit().putInt("ua.rsa.gd.resend_monitor", delta).commit();
 						}
 					} catch (Exception ee) {
 					}
@@ -5118,7 +5118,7 @@ public class RsaDb
 			XmlPullParser parser = factory.newPullParser();
 			Bundle data = new Bundle();
 
-			/** appPath = /data/data/ru.by.rsa/files */
+			/** appPath = /data/data/ua.rsa.gd/files */
 			String appPath = fPath + File.separator + "inbox/";
 
 			File xmlFile = new File(appPath + "goods.xml");

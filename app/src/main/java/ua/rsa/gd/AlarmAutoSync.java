@@ -13,7 +13,7 @@ import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Alarm class that used to periodic wakeup gpsservice

@@ -42,7 +42,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 /**
  * Activity that allows user to view, add and change quantity of goods

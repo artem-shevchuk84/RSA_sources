@@ -40,7 +40,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.utils.GpsUtils;
 
 public class Preferences extends PreferenceActivity

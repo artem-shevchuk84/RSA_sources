@@ -29,7 +29,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 
 public class GeophotoActivity extends Activity {
 

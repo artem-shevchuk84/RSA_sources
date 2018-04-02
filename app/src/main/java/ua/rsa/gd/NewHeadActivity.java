@@ -72,7 +72,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import ru.by.rsa.R;
+import ua.rsa.gd.R;
 import ua.rsa.gd.adapter.item.BrandItem;
 import ua.rsa.gd.adapter.item.ComboCustomerItem;
 import ua.rsa.gd.adapter.item.ComboShopItem;
